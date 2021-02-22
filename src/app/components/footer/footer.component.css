@@ -1,32 +1,66 @@
+.footer {
+  height: 13rem;
+  margin-top: -0.7rem;
+}
 .footer__grid {
-  padding: 2rem 3rem;
+  padding: 2rem 0rem;
+  height: inherit;
 }
 
 .footer__col {
   float: left;
-  width: 33.33333%;
-  font-size: 1rem;
+  width: 30%;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: bold;
+  margin-right: 3rem;
 }
 
 .text--cel {
-  margin-top: 2rem;
-  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.text--direccion {
+  padding-left: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
 }
 
 .footer__icon {
   display: inline-block;
   margin-left: 2rem;
 }
-i {
+.fa-facebook,
+.fa-instagram,
+.fa-whatsapp {
   font-size: 2rem;
   display: inline-block;
   margin: 2rem 1.5rem;
+  cursor: pointer;
+}
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-instagram:hover {
+  color: #e95950;
+}
+
+.fa-whatsapp:hover {
+  color: #128c7e;
 }
 
 p {
-  padding-left: 2.5rem;
-  font-size: 1.17rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  padding-left: 1rem;
+}
+h4 {
+  padding-left: 1rem;
+}
+
+.fa-mobile-alt {
+  font-size: 1rem;
+  display: inline-block;
 }

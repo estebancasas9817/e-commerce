@@ -7,6 +7,7 @@
 .nav__item {
   display: inline-block;
   padding: 1rem 2rem;
+  overflow: hidden;
 }
 
 .nav__link {
@@ -18,26 +19,6 @@
   text-transform: uppercase;
 }
 
-.lista--desplegable {
-  position: relative;
-  left: 41%;
-  z-index: 100;
-}
-
-.nav__link--home:hover + .lista--desplegable {
-  display: block;
-}
-
-.lista--desplegable__item {
-  border-bottom: 0.1rem solid #000;
-  width: 18%;
-  list-style: none;
-}
-
-.lista--desplegable__link {
-  color: #000;
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1rem 1rem;
+.nav__link:hover {
+  color: #f7f7f7bb;
 }
