@@ -1,0 +1,43 @@
+.nav {
+  width: 100%;
+  height: 3rem;
+  background-color: #000;
+  text-align: center;
+}
+.nav__item {
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+.nav__link {
+  display: inline-block;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.lista--desplegable {
+  position: relative;
+  left: 41%;
+  z-index: 100;
+}
+
+.nav__link--home:hover + .lista--desplegable {
+  display: block;
+}
+
+.lista--desplegable__item {
+  border-bottom: 0.1rem solid #000;
+  width: 18%;
+  list-style: none;
+}
+
+.lista--desplegable__link {
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 1rem;
+}

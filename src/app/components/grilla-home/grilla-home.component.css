@@ -1,0 +1,19 @@
+.grid {
+  width: 100%;
+}
+.grid__fila {
+  margin-bottom: 0.5rem;
+}
+
+.grid__col {
+  width: 33.33333%;
+  display: inline-block;
+}
+
+.grid__img {
+  width: 100%;
+  height: 100%;
+}
+img {
+  cursor: pointer;
+}
