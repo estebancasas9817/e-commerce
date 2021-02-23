@@ -1,0 +1,115 @@
+.about {
+  width: 100%;
+  height: 10rem;
+  background-color: black;
+  text-align: center;
+}
+
+.text--about {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding-top: 2.5rem;
+}
+
+.grid {
+  width: 65%;
+  height: 180vh;
+  margin-left: 15rem;
+  padding-bottom: 2rem;
+}
+
+.grid__col {
+  float: left;
+  width: 33.3333%;
+  margin-left: 7rem;
+}
+
+.text--marca {
+  margin-top: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.text--p {
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.textBox__p {
+  font-size: 0.9rem;
+  padding-left: 1rem;
+}
+
+.text--leer {
+  margin-top: 0.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+@keyframes animacionFlecha {
+  0% {
+    transform: translateY(0.3rem);
+  }
+
+  50% {
+    transform: translateY(-0.3rem);
+  }
+  100% {
+    transform: translateY(0.3rem);
+  }
+}
+
+.flecha--leer {
+  text-align: center;
+  font-size: 3rem;
+  cursor: pointer;
+  animation: animacionFlecha ease-in;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transition: all 0.2s;
+}
+
+.leerBox--p {
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.leerText {
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.img {
+  width: 110%;
+}
+
+.hidden {
+  display: none;
+}
+
+.texto--p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.container {
+  padding-top: 1rem;
+}
+
+.margen {
+  margin-bottom: 5rem;
+}
