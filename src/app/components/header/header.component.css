@@ -20,10 +20,16 @@
   right: 5%;
 }
 
-.icono {
+.admin {
   position: absolute;
   top: 40%;
   right: 10%;
+}
+
+.icono {
+  position: absolute;
+  top: 40%;
+  right: 7.5%;
 }
 i {
   font-size: 1.5rem;
