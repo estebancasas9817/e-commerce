@@ -12,6 +12,13 @@ import { AboutComponent } from './components/about/about.component';
 import { CuentaComponent } from './components/cuenta/cuenta.component';
 import { RouterModule } from '@angular/router';
 import { CuentaAdminComponent } from './cuenta-admin/cuenta-admin.component';
+import { BeachwearComponent } from './beachwear/beachwear.component';
+import { TopComponent } from './components/top/top.component';
+import { ShortsComponent } from './components/shorts/shorts.component';
+import { CamisetasComponent } from './components/camisetas/camisetas.component';
+import { BuzosComponent } from './components/buzos/buzos.component';
+import { GorrasComponent } from './components/gorras/gorras.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +30,13 @@ import { CuentaAdminComponent } from './cuenta-admin/cuenta-admin.component';
     TiendaComponent,
     AboutComponent,
     CuentaComponent,
-    CuentaAdminComponent
+    CuentaAdminComponent,
+    BeachwearComponent,
+    TopComponent,
+    ShortsComponent,
+    CamisetasComponent,
+    BuzosComponent,
+    GorrasComponent
   ],
   imports: [
     BrowserModule,
@@ -34,8 +47,13 @@ import { CuentaAdminComponent } from './cuenta-admin/cuenta-admin.component';
         {path: 'home', component: GrillaHomeComponent},
         {path: 'tienda', component: TiendaComponent},
         {path: 'cuenta', component: CuentaComponent},
-        {path: 'admin', component: CuentaAdminComponent}
-        
+        {path: 'admin', component: CuentaAdminComponent},
+        {path: 'beachwear', component: BeachwearComponent},
+        {path: 'top', component: TopComponent},
+        {path: 'shorts', component: ShortsComponent},
+        {path: 'camisetas', component: CamisetasComponent},
+        {path: 'buzos', component: BuzosComponent},
+        {path: 'gorras', component: GorrasComponent}
       ]
     ),
   ],
