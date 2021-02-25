@@ -10,6 +10,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TiendaComponent } from './components/tienda/tienda.component';
 import { AboutComponent } from './components/about/about.component';
 import { CuentaComponent } from './components/cuenta/cuenta.component';
+import { RouterModule } from '@angular/router';
+import { CuentaAdminComponent } from './cuenta-admin/cuenta-admin.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,22 @@ import { CuentaComponent } from './components/cuenta/cuenta.component';
     FooterComponent,
     TiendaComponent,
     AboutComponent,
-    CuentaComponent
+    CuentaComponent,
+    CuentaAdminComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(
+      [
+        {path: 'about', component: AboutComponent},
+        {path: 'home', component: GrillaHomeComponent},
+        {path: 'tienda', component: TiendaComponent},
+        {path: 'cuenta', component: CuentaComponent},
+        {path: 'admin', component: CuentaAdminComponent}
+        
+      ]
+    ),
   ],
   providers: [],
   bootstrap: [AppComponent]
