@@ -1,20 +1,20 @@
 import { Injectable } from '@angular/core';
-import {Subject} from 'rxjs';
+import { Subject } from 'rxjs'
 
 @Injectable({
   providedIn: 'root'
 })
 export class MessengerService {
 
+  subject = new Subject()
 
-  sujeto = new Subject();
   constructor() { }
 
-  enviarMensaje(producto){
-    this.sujeto.next(producto);
+  sendMsg(product) {
+    this.subject.next(product) //Triggering an event
   }
 
-  getMensaje(){
-    return this.sujeto.asObservable();
+  getMsg() {
+    return this.subject.asObservable()
   }
 }
