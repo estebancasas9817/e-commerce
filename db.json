@@ -1,0 +1,96 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Bikini Top - Sand",
+      "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-sand-1_720x720.jpg?v=1607521703",
+      "price": 75
+    },
+    {
+      "id": 2,
+      "name": "Bikini Top - Leopard",
+      "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1_720x.jpg?v=1607521639",
+      "price": 80
+    },
+    {
+      "id": 3,
+      "name": "Bikini Top - Black",
+      "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
+      "price": 75
+    },
+    {
+      "id": 4,
+      "name": "Bikini Bottom - Sand",
+      "description": "Bikini panty en lycra( 84% poliamida, 16% elastano)logo estampado en vinilo textil.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-bottom-sand-1_720x.jpg?v=1607521343",
+      "price": 65
+    },
+    {
+      "id": 5,
+      "name": "Bikini Bottom - Leopard",
+      "description": "Bikini panty en lycra( 84% poliamida, 16% elastano)logo estampado en vinilo textil.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-bottom-leopard-1_720x.jpg?v=1607521264",
+      "price": 70
+    },
+    {
+      "id": 6,
+      "name": "Bikini Bottom - Black",
+      "description": "Bikini panty en lycra( 84% poliamida, 16% elastano)logo estampado en vinilo textil.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-bottom-black-1_720x.jpg?v=1607521094",
+      "price": 65
+    },
+    {
+      "id": 7,
+      "name": "High Waist Bikini Bottom - Bone",
+      "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-bone-1_720x.jpg?v=1607522293",
+      "price": 70
+    },
+    {
+      "id": 8,
+      "name": "High Waist Bikini Bottom - Sand",
+      "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
+      "price": 70
+    },
+    {
+      "id": 9,
+      "name": "High Waist Bikini Bottom - Black",
+      "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-black-1_720x.jpg?v=1607522271",
+      "price": 70
+    }
+  ],
+  "cart": [
+    {
+      "product": {
+        "id": 2,
+        "name": "Bikini Top - Leopard",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1_720x.jpg?v=1607521639",
+        "price": 80
+      },
+      "id": 1
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

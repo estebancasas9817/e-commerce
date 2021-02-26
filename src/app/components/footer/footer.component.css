@@ -1,6 +1,7 @@
 .footer {
   height: 13rem;
   margin-top: -0.7rem;
+  background-color: #f7f7f7;
 }
 .footer__grid {
   padding: 2rem 0rem;
