@@ -58,24 +58,139 @@
     },
     {
       "id": 9,
+      "name": "Basic T-Shirt Box Logo - Black",
+      "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-b-01_720x720.png?v=1613785193",
+      "price": 70
+    },
+    {
+      "id": 10,
+      "name": "High Waist Bikini Bottom - Black",
+      "description": "Camiseta básica unisex en algodón peinado , con logo estampado en alta densidad en frente.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-black-1_720x.jpg?v=1607522271",
+      "price": 59
+    },
+    {
+      "id": 11,
+      "name": "Basic T-Shirt Box Logo - White",
+      "description": "Camiseta básica unisex en algodón peinado , con logo estampado en alta densidad en frente.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-01_720x.png?v=1613787089",
+      "price": 59
+    },
+    {
+      "id": 12,
+      "name": "Basic T-Shirt - Military Green",
+      "description": "Camiseta básica unisex en algodón(100%) peinado , con logo estampado en alta densidad en frente, banderín logo costado.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-tshirt-military-green-1_720x.jpg?v=1613827171",
+      "price": 59
+    },
+    {
+      "id": 13,
+      "name": "Basic T-Shirt - Mustard",
+      "description": "Camiseta básica unisex en algodón(100%) peinado , con logo estampado en alta densidad en frente, banderín logo costado.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-tshirt-mustard-1_720x.jpg?v=1613827194",
+      "price": 59
+    },
+    {
+      "id": 14,
+      "name": "Basic T-Shirt - Red Wine",
+      "description": "Camiseta básica unisex en algodón(100%) peinado , con logo estampado en alta densidad en frente, banderín logo costado.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-tshirt-red-wine-1_720x.jpg?v=1613827213",
+      "price": 59
+    },
+    {
+      "id": 15,
+      "name": "Comfort Cargo Pants - Navy Blue",
+      "description": "Pantalón en tela micro comfort rígida sin lycra, (90% poliéster - 10% nylon) textura durazno por fuera y textura sedosa por dentro. Bolsillos en frente y en posterior, elástico en pretina y botas, estampado de logo en bolsillo izquierdo.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-confort-pants-blue-1_720x.jpg?v=1614292387",
+      "price": 105
+    },
+    {
+      "id": 16,
+      "name": " Comfort Cargo Pants - Camel",
+      "description": "Pantalón en tela micro comfort rígida sin lycra, (90% poliéster - 10% nylon) textura durazno por fuera y textura sedosa por dentro. Bolsillos en frente y en posterior, elástico en pretina y botas, estampado de logo en bolsillo izquierdo.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-confort-pants-camel-1_720x.jpg?v=1614292170",
+      "price": 105
+    },
+    {
+      "id": 17,
+      "name": "Comfort Cargo Pants - Military Green",
+      "description": "Pantalón en tela micro comfort rígida sin lycra, (90% poliéster - 10% nylon) textura durazno por fuera y textura sedosa por dentro. Bolsillos en frente y en posterior, elástico en pretina y botas, estampado de logo en bolsillo izquierdo.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-confort-pants-soft-green-1_720x.jpg?v=1614292317",
+      "price": 105
+    },
+    {
+      "id": 18,
+      "name": "Basic Hoodie - Red",
+      "description": "Buzo unisex con capucha en tela burda sin perchar de alto gramaje (100 % algodón) , rib en fajón y puños, estampado logo en alta densidad, cordón a tono en algodón y puntera metálica negra. Estampado logo bandera en manga.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-hoodie-red-1_720x.jpg?v=1613784156",
+      "price": 140
+    },
+    {
+      "id": 19,
+      "name": "Basic Hoodie - Yellow",
+      "description": "Buzo unisex con capucha en tela burda sin perchar de alto gramaje (100 % algodón) , rib en fajón y puños, estampado logo en alta densidad, cordón a tono en algodón y puntera metálica negra. Estampado logo bandera en manga.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-hoodie-yellow-1_720x.jpg?v=1610663156",
+      "price": 140
+    },
+    {
+      "id": 20,
       "name": "High Waist Bikini Bottom - Black",
       "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-black-1_720x.jpg?v=1607522271",
-      "price": 70
-    }
-  ],
-  "cart": [
+      "price": 140
+    },
     {
-      "product": {
-        "id": 2,
-        "name": "Bikini Top - Leopard",
-        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1_720x.jpg?v=1607521639",
-        "price": 80
-      },
-      "id": 1
+      "id": 21,
+      "name": "Medellín Hoodie",
+      "description": "Buzo unisex con capucha en tela burda sin perchar de alto gramaje (100 % algodón) , rib en fajón y puños, estampado logo y bandera en alta densidad. Cordón negro en algodón y puntera metálica negra. Marquilla exterior tejida en manga.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-medellin-hoodie-1_720x.png?v=1607352985",
+      "price": 140
+    },
+    {
+      "id": 22,
+      "name": "Retro Top Box Logo - White",
+      "description": "Top escote profundo en lycra poliéster ( 80% poliéster- 20% lycra ), estampado en vinilo textil  en frente.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/RETRO_TOP_BOX_LOGO_WHITE_2_720x.jpg?v=1612973836",
+      "price": 70
+    },
+    {
+      "id": 23,
+      "name": "Retro Top - Military Green",
+      "description": "Top escote profundo en lycra poliéster ( 80% poliéster- 20% lycra ), estampado en vinilo textil  en frente.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-retro-top-military-green-3_720x.jpg?v=1613429393",
+      "price": 70
+    },
+    {
+      "id": 24,
+      "name": "Retro Top - Olive",
+      "description": "Top escote profundo en lycra poliéster ( 80% poliéster- 20% lycra ), estampado en vinilo textil  en frente.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/image_7e668e69-5cfc-48d5-89ff-b3b9df0a5bc6_720x.jpg?v=1592224006",
+      "price": 70
+    },
+    {
+      "id": 25,
+      "name": "Classic Cap - Black",
+      "description": "Gorra en drill unisex con bordado en frente y correa ajustable en la parte trasera.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-cap-black_720x.jpg?v=1596721859",
+      "price": 55
+    },
+    {
+      "id": 26,
+      "name": "Classic Cap- White",
+      "description": "Gorra en drill unisex con bordado en frente y correa ajustable en la parte trasera.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-cap-white_3fef9de5-c7bf-4ca9-aba0-cf6b495bdfc4_720x.jpg?v=1596721923",
+      "price": 55
+    },
+    {
+      "id": 27,
+      "name": "Happy Socks - Pack x 3",
+      "description": "Medias en algodón con fondeado caras felices y logo (TRUE) en la planta del pie.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-happy-socks-pack-1_720x.jpg?v=1607985240",
+      "price": 59
     }
   ],
+  "cart": [],
   "posts": [
     {
       "id": 1,

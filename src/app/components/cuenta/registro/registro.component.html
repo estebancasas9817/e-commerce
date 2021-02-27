@@ -1,0 +1,39 @@
+<h2 class="cliente">Soy nuevo</h2>
+    <form action="" class="contact__form"
+    (ngSubmit)="register()"
+    [formGroup]="registerForm">
+
+        <input type="text" 
+        class="contact__name input" 
+        placeholder="Nombre" 
+        required 
+        id="nombre"
+        formControlName="nombre">
+        <label for="" class="contact__label">Nombre</label>
+
+        <input type="text" 
+        class="contact__apellido input"
+         placeholder="Apellido" 
+         required
+        id="apellido"
+        formControlName="apellido">
+        <label for="" class="contact__label">Apellido</label>
+        <input type="email" 
+        class="contact__email input" 
+        placeholder="Email" 
+        required
+        id="email"
+        formControlName="email">
+        <label for="" class="contact__label">Email</label>
+        <input type="password" 
+        class="contact__clave input" 
+        placeholder="Contraseña" 
+        required
+        id="clave"
+        formControlName="clave">
+        <label for="" class="contact__label">Contraseña</label>
+        <input type="submit" 
+        value="Registrarse" 
+        class="contact__enviar contact__enviar--registro" >
+                    
+    </form>

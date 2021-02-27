@@ -15,7 +15,6 @@ export class CartService {
   constructor(private http: HttpClient) { }
 
   getCartItems(): Observable<Cart[]> {
-    //TODO: Mapping the obtained result to our CartItem props. (pipe() and map())
     return this.http.get<Cart[]>(cartUrl).pipe(
       map((result: any[]) => {
         let cartItems: Cart[] = [];

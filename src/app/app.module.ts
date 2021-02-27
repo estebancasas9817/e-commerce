@@ -18,6 +18,10 @@ import { CartItemComponent } from './components/shopping-cart/cart/cart-item/car
 import { FiltersComponent } from './components/shopping-cart/filters/filters.component';
 import { ProductListComponent } from './components/shopping-cart/product-list/product-list.component';
 import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { LoginComponent } from './components/cuenta/login/login.component';
+import { RegistroComponent } from './components/cuenta/registro/registro.component';
+import{FormsModule,ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,20 +38,28 @@ import { ProductItemComponent } from './components/shopping-cart/product-list/pr
     FiltersComponent,
     ProductListComponent,
     ProductItemComponent,
+    PageNotFoundComponent,
+    LoginComponent,
+    RegistroComponent,
     
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(
       [
+        {path:'', redirectTo:'/home', pathMatch:'full'},
         {path: 'about', component: AboutComponent},
         {path: 'home', component: GrillaHomeComponent},
         {path: 'tienda', component: TiendaComponent},
         {path: 'cuenta', component: CuentaComponent},
         {path: 'carrito', component: CartComponent},
-        // {path: 'lista-productos', component: ListaProductosComponent}
+        {path: 'productos', component: ShoppingCartComponent},
+        {path: '**', component: PageNotFoundComponent},
+        
       ]
     ),
     NgbModule,
