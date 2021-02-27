@@ -209,6 +209,15 @@
         "clave": ""
       },
       "id": 2
+    },
+    {
+      "usuario": {
+        "nombre": "qqqq",
+        "apellido": "qqq",
+        "email": "q@q",
+        "clave": "qqqq"
+      },
+      "id": 3
     }
   ],
   "posts": [
