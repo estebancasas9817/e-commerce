@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { MessengerService } from 'src/app/services/messenger.service';
+import { UsuariosService } from 'src/app/services/usuarios.service';
+
 import {FormControl,FormGroup,FormBuilder,Validators} from '@angular/forms';
 @Component({
   selector: 'app-registro',
@@ -8,10 +11,19 @@ import {FormControl,FormGroup,FormBuilder,Validators} from '@angular/forms';
 export class RegistroComponent implements OnInit {
 
   registerForm: FormGroup;
-  constructor(private builder:FormBuilder) { }
+  constructor(private builder:FormBuilder,private msg: MessengerService,
+    private usuarioService: UsuariosService) { }
+
+
 
   ngOnInit(): void {
     this.buildForm();
+  }
+
+  agregarUser() {
+    this.usuarioService.agregarUsuarios(this.registerForm.value).subscribe(() => {
+      this.msg.sendMsg(this.registerForm.value)
+    })
   }
 
   buildForm(){
@@ -24,7 +36,7 @@ export class RegistroComponent implements OnInit {
   }
 
   register() {
-    console.log(this.registerForm.value);
+    console.log(this.registerForm.value.nombre);
   }
 
 }
