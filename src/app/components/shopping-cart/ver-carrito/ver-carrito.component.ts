@@ -1,38 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { MessengerService } from 'src/app/services/messenger.service'
+import { Component, OnInit,Input} from '@angular/core';
 import { Product } from 'src/app/models/product';
 import { CartService } from 'src/app/services/cart.service';
 import { Cart } from 'src/app/models/cart';
-import { ToastrService } from 'ngx-toastr';
-
+import { MessengerService } from 'src/app/services/messenger.service'
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  selector: 'app-ver-carrito',
+  templateUrl: './ver-carrito.component.html',
+  styleUrls: ['./ver-carrito.component.css']
 })
-export class CartComponent implements OnInit {
-
+export class VerCarritoComponent implements OnInit {
   cartItems = [];
 
   cartTotal = 0
+  @Input() cartItem: any
+  constructor(private msg: MessengerService,
+    private cartService: CartService) { }
 
-  constructor(
-    private msg: MessengerService,
-    private cartService: CartService,
-    private toastrService: ToastrService
-  ) { }
-
-  ngOnInit() {
+  ngOnInit(): void {
     this.handleSubscription();
     this.loadCartItems();
     this.getAllEmployee();
   }
-
-  getAllEmployee() {
-    this.cartService.getAllEmployee();
-  }
-
   handleSubscription() {
     this.msg.getMsg().subscribe((product: Product) => {
       this.loadCartItems();
@@ -53,11 +42,15 @@ export class CartComponent implements OnInit {
     })
   }
 
+  getAllEmployee() {
+    this.cartService.getAllEmployee();
+  }
+
   eliminarCarro(id: number) {
     this.cartService.eliminarCarro(id).subscribe(
       (data) => {
         this.getAllEmployee();
-        
       });
   }
+
 }

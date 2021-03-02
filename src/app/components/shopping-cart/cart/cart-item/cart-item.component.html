@@ -1,6 +1,13 @@
 <div class="cart-item">
-    <span>{{ cartItem.productName }}</span> <span>  x </span>
+  <div class="caja">
+    <span class="eliminar--item">
+      <a href="/productos"(click)="eliminarCarro(cartItem.id)">X</a></span>
+  </div>
+    <div class="contenedor">
+      <span>{{ cartItem.productName }}</span> <span>  x </span>
     <span>{{ cartItem.qty }}</span>:
     <strong>{{ (cartItem.qty * cartItem.price) | currency:'USD' }}</strong>
+    </div>
+    
   </div>
   

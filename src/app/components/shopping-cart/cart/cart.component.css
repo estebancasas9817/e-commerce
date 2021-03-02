@@ -1,3 +1,12 @@
+.contenedor__carrito {
+  position: sticky;
+  top: 0%;
+}
+.contenedor {
+  position: relative;
+  height: 800vh;
+}
+
 .list-group-item:first-child {
   border-top-left-radius: 0;
   border-top-right-radius: 0.25rem;
@@ -16,12 +25,6 @@
   font-size: 1.1rem;
   text-transform: uppercase;
 }
-.cerrar-carrito {
-  display: inline-block;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #000;
-}
 
 .texto--carro {
   color: #000;
@@ -38,4 +41,38 @@
 .subtotal {
   letter-spacing: 0.3rem;
   font-size: 1.1rem;
+}
+
+.pagar {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.lista-pagar {
+  background-color: #000;
+}
+
+.lista__verCarrito {
+  border: 0.15rem solid #000;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.lista__subtotal {
+  margin-top: 5rem;
+  border: none;
+  border-top: 0.1rem solid gray;
+}
+
+.boton {
+  text-decoration: none;
+  color: #000;
+}
+
+.boton--blanco {
+  color: #fff;
+  text-decoration: none;
 }

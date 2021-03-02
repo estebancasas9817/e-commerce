@@ -4,6 +4,7 @@ export class Cart {
   id: number;
   productId: number;
   productName: string;
+  productImage: string;
   qty: number;
   price: number;
 
@@ -11,6 +12,7 @@ export class Cart {
     this.id = id;
     this.productId = product.id;
     this.productName = product.name;
+    this.productImage = product.imageUrl;
     this.price = product.price;
     this.qty = qty;
   }

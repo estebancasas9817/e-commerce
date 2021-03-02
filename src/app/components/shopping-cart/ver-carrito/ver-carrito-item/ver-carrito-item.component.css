@@ -1,0 +1,21 @@
+h4 {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 1rem 2rem;
+}
+
+.margen {
+  margin-left: 13rem;
+}
+
+.cantidad {
+  margin-left: 7rem;
+}
+.total {
+  margin-left: 12rem;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 8.5rem;
+}

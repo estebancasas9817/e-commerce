@@ -22,6 +22,10 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { LoginComponent } from './components/cuenta/login/login.component';
 import { RegistroComponent } from './components/cuenta/registro/registro.component';
 import{FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { NgxSpinnerModule } from "ngx-spinner";
+import { ToastrModule } from 'ngx-toastr';
+import { VerCarritoComponent } from './components/shopping-cart/ver-carrito/ver-carrito.component';
+import { VerCarritoItemComponent } from './components/shopping-cart/ver-carrito/ver-carrito-item/ver-carrito-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +45,8 @@ import{FormsModule,ReactiveFormsModule} from '@angular/forms';
     PageNotFoundComponent,
     LoginComponent,
     RegistroComponent,
+    VerCarritoComponent,
+    VerCarritoItemComponent,
     
   ],
   imports: [
@@ -49,6 +55,8 @@ import{FormsModule,ReactiveFormsModule} from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxSpinnerModule,
+    ToastrModule.forRoot(),
     RouterModule.forRoot(
       [
         {path:'', redirectTo:'/home', pathMatch:'full'},
@@ -58,6 +66,7 @@ import{FormsModule,ReactiveFormsModule} from '@angular/forms';
         {path: 'cuenta', component: CuentaComponent},
         {path: 'carrito', component: CartComponent},
         {path: 'productos', component: ShoppingCartComponent},
+        {path: 'verCarro', component: VerCarritoComponent},
         {path: '**', component: PageNotFoundComponent},
         
       ]

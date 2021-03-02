@@ -36,7 +36,10 @@ export class RegistroComponent implements OnInit {
   }
 
   register() {
-    console.log(this.registerForm.value.nombre);
+    const textoUsuario = document.querySelector(".textoUsuario");
+    const logOut = document.querySelector(".contenedor__logOut");
+    textoUsuario.textContent = this.registerForm.value.nombre
+    logOut.classList.toggle("hidden");
   }
 
 }

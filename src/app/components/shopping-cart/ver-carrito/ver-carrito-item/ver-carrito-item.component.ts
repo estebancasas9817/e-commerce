@@ -1,15 +1,15 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { MessengerService } from 'src/app/services/messenger.service'
 import { Product } from 'src/app/models/product';
 import { CartService } from 'src/app/services/cart.service';
 import { Cart } from 'src/app/models/cart';
 import { ToastrService } from 'ngx-toastr';
 @Component({
-  selector: 'app-cart-item',
-  templateUrl: './cart-item.component.html',
-  styleUrls: ['./cart-item.component.css']
+  selector: 'app-ver-carrito-item',
+  templateUrl: './ver-carrito-item.component.html',
+  styleUrls: ['./ver-carrito-item.component.css']
 })
-export class CartItemComponent implements OnInit {
+export class VerCarritoItemComponent implements OnInit {
 
   @Input() cartItem: any
 

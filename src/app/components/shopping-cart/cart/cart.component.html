@@ -1,30 +1,27 @@
 <div class="contenedor">
     <div class="contenedor__carrito">
         <div class="contenedor__header">
-            <a href="#" class="cerrar-carrito">x</a>
             <h2 class="texto--carro">Carrito</h2>
         </div>
-        <div *ngIf="cartItems.length === 0" class="alert alert-info">No hay productos en el carrito.</div>
+        <div *ngIf="cartItems.length === 0" class="alert alert-info">No hay productos en el carrito.
+        </div>
         <ul *ngIf="cartItems.length > 0" class="list-group">
-            <li class="list-group-item" *ngFor="let item of cartItems">
+            <li class="list-group-item cerrar" *ngFor="let item of cartItems">
               <app-cart-item [cartItem]="item"></app-cart-item>
             </li>
-            <li class="list-group-item active">
+            <li class="list-group-item lista__subtotal">
                 <h5 class="subtotal">Subtotal :  {{cartTotal | currency:'USD'}}</h5>
             </li>
+
+            <li class="list-group-item lista__verCarrito">
+              <h5 class="verCarrito"><a [routerLink] = "['/verCarro']" class="boton">Ver carrito</a></h5>
+          </li>
+
+            <li class="list-group-item lista-pagar">
+              <h5 class="pagar"><a href="#" class="boton--blanco">Ir A Pagar</a></h5>
+          </li>
         </ul>
-        
     </div>
 </div> 
 
-<!-- <div *ngIf="cartItems.length === 0" class="alert alert-info">Your Cart is Empty.</div>
 
-<ul *ngIf="cartItems.length > 0" class="list-group">
-  <li class="list-group-item" *ngFor="let item of cartItems">
-    <app-cart-item [cartItem]="item"></app-cart-item>
-  </li>
-
-  <li class="list-group-item active">
-    <strong>Total</strong> {{ cartTotal | currency:'USD' }}
-  </li>
-</ul> -->

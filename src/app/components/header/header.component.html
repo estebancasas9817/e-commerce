@@ -10,7 +10,12 @@
     </div>
     <div class="icono">
     <a [routerLink]="['/cuenta']"><i class="fas fa-user"></i></a>
-        <small>Usuario</small>
+        <small class="textoUsuario">Usuario</small>
+    </div>
+
+    <div class="contenedor__logOut hidden">
+        <a [routerLink]="['/home']" class="logOut__Link"><i class="fas fa-sign-out-alt"></i></a>
+        <small>Log Out</small>
     </div>
     
 </header>

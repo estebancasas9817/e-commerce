@@ -193,31 +193,11 @@
   "cart": [],
   "usuarios": [
     {
-      "usuario": {
-        "nombre": "Esteban",
-        "apellido": "Casas",
-        "email": "estebancasas9817@gmail.com",
-        "clave": "hola"
-      },
+      "nombre": "Esteban",
+      "apellido": "Casas",
+      "email": "estebancasas9817@gmail.com",
+      "clave": "esteban",
       "id": 1
-    },
-    {
-      "usuario": {
-        "nombre": "eeeeee",
-        "apellido": "",
-        "email": "",
-        "clave": ""
-      },
-      "id": 2
-    },
-    {
-      "usuario": {
-        "nombre": "qqqq",
-        "apellido": "qqq",
-        "email": "q@q",
-        "clave": "qqqq"
-      },
-      "id": 3
     }
   ],
   "posts": [
