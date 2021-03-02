@@ -1,0 +1,127 @@
+<h2>Datos de envio</h2>
+<div class="contenedor">
+    <div class="columna">
+        <form action="" class="contact__form">
+            <input type="text" 
+            class="contact__name input" 
+            placeholder="Nombre" 
+            required 
+            id="nombre"
+            formControlName="nombre">
+            <label for="" class="contact__label">Nombre</label>
+    
+            <input type="text" 
+            class="contact__apellido input"
+             placeholder="Apellido" 
+             required
+            id="apellido">
+            <label for="" class="contact__label">Apellido</label>
+            <input type="number" 
+            class="contact__email input" 
+            placeholder="Documento de Identidad" 
+            required
+            id="documento">
+            <label for="" class="contact__label">Documento de Identidad</label>
+            <input type="text" 
+            class="contact__clave input" 
+            placeholder="Dirección" 
+            required
+            id="direccion">
+            <label for="" class="contact__label">Dirección</label>
+    
+            <input type="text" 
+            class="contact__clave input" 
+            placeholder="Apartamento, local, etc (opcional)" 
+            required
+            id="apartamento">
+            <label for="" class="contact__label">Apartamento</label>
+    
+            <input type="text" 
+            class="contact__clave input" 
+            placeholder="Ciudad" 
+            required
+            id="ciudad">
+            <label for="" class="contact__label">Ciudad</label>
+
+            <input type="number" 
+            class="contact__clave input" 
+            placeholder="Teléfono" 
+            required
+            id="telefono">
+            <label for="" class="contact__label">Teléfono</label>
+            <div class="contenedor__select">
+                <select name="Pais" id="">
+                    <option disabled selected>País</option>
+    
+                    <option value="Colombia">Colombia</option>
+                </select>
+        
+                <select name="Departamento" id="">
+                    <option disabled selected>Departamento</option>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Antioquia">Antioquia</option>
+                    <option value="Bolivar">Bolivar</option>
+                    <option value="Caldas">Caldas</option>
+                </select>
+            </div>
+
+            <h2 class="texto--pagar">Pago</h2>
+
+            <div class="form__group uMarginBottom-4">
+                <div class="form__radio-group">
+                    <input type="radio" class="form__radio-input" id="small" name="size">
+                    <label for="small" class="form__radio-label">
+                        <span class="form__radio-buttom"></span>
+                        Tarjeta de Credito</label>
+                </div>
+                <div class="form__radio-group">
+                    <input type="radio" class="form__radio-input" id="large" name="size">
+                    <label for="large" class="form__radio-label">
+                        <span class="form__radio-buttom"></span>
+                        Tarjeta de Debito</label>
+                </div>
+
+                <div class="form__radio-group">
+                    <input type="radio" class="form__radio-input" id="bitcoin" name="size">
+                    <label for="bitcoin" class="form__radio-label">
+                        <span class="form__radio-buttom"></span>
+                        Bitcoins</label>
+                </div>
+
+                <input type="text" 
+                class="contact__clave input" 
+                placeholder="Nombre del titular de la tarjeta" 
+                required
+                id="direccion">
+                <label for="" class="contact__label">Nombre del titular de la tarjeta</label>
+
+                <input type="number" 
+                class="contact__clave input" 
+                placeholder="Número de la tarjeta de credito" 
+                required
+                id="direccion">
+                <label for="" class="contact__label">Número de la tarjeta de credito</label>
+
+                <input type="date" 
+                class="contact__clave input"  
+                required
+                id="direccion">
+                <label for="" class="contact__label">Expiración</label>
+
+                <input type="number" 
+                class="contact__clave input" 
+                placeholder="CVV" 
+
+                required
+                id="direccion">
+                <label for="" class="contact__label">CVV</label>
+            </div>
+            <input type="submit"
+            value="Pagar" 
+            [routerLink]="['/detalle-compra']"
+            class="contact__enviar contact__enviar--registro" >      
+        </form>
+    </div>
+</div>
+

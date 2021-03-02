@@ -1,3 +1,11 @@
+h1 {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  height: 5rem;
+  padding: 3rem 0rem;
+  font-size: 1.5rem;
+}
 .imagen {
   width: 15%;
 }

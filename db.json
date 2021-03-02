@@ -190,7 +190,38 @@
       "price": 59
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "product": {
+        "id": 12,
+        "name": "Basic T-Shirt - Military Green",
+        "description": "Camiseta básica unisex en algodón(100%) peinado , con logo estampado en alta densidad en frente, banderín logo costado.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-tshirt-military-green-1_720x.jpg?v=1613827171",
+        "price": 59
+      },
+      "id": 3
+    },
+    {
+      "product": {
+        "id": 1,
+        "name": "Bikini Top - Sand",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-sand-1_720x720.jpg?v=1607521703",
+        "price": 75
+      },
+      "id": 4
+    },
+    {
+      "product": {
+        "id": 18,
+        "name": "Basic Hoodie - Red",
+        "description": "Buzo unisex con capucha en tela burda sin perchar de alto gramaje (100 % algodón) , rib en fajón y puños, estampado logo en alta densidad, cordón a tono en algodón y puntera metálica negra. Estampado logo bandera en manga.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-hoodie-red-1_720x.jpg?v=1613784156",
+        "price": 140
+      },
+      "id": 5
+    }
+  ],
   "usuarios": [
     {
       "nombre": "Esteban",
@@ -198,6 +229,20 @@
       "email": "estebancasas9817@gmail.com",
       "clave": "esteban",
       "id": 1
+    },
+    {
+      "nombre": "Juliana",
+      "apellido": "Cardona",
+      "email": "supersaeta2000@hotmail.com",
+      "clave": "lola2020",
+      "id": 2
+    },
+    {
+      "nombre": "Patricia",
+      "apellido": "Garzon",
+      "email": "patricia@gmail.com",
+      "clave": "patricia2021",
+      "id": 3
     }
   ],
   "posts": [

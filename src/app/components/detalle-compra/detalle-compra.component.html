@@ -1,0 +1,30 @@
+<h1>Detalle de tu compra</h1>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col" class="tamanio"></th>
+            <th scope="col" class="tamanio">Producto</th>
+            <th scope="col" class="tamanio">Precio</th>
+            <th scope="col" class="tamanio">Cantidad</th>
+            <th scope="col" class="tamanio">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of cartItems">
+            <td scope="row" class="imagen">
+                <img [src]="item.productImage" width="60%" alt="">
+            </td>
+            <th scope="row" class="tamanioInfo">{{item.productName}}</th>
+            <td scope="row" class="tamanioInfo">{{item.price | currency:'USD'}}</td>
+            <td scope="row" class="tamanioInfo itemCantidad">{{item.qty}}</td>
+            <td scope="row" class="tamanioInfo">{{(item.qty * item.price) | currency:'USD'}}</td>
+        </tr>
+    </tbody>
+    
+</table>
+
+<div class="contenedor">
+    <h2 class="total">Total: {{cartTotal | currency: 'USD'}}</h2>
+    
+    
+</div>

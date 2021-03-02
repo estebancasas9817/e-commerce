@@ -26,6 +26,8 @@ import { NgxSpinnerModule } from "ngx-spinner";
 import { ToastrModule } from 'ngx-toastr';
 import { VerCarritoComponent } from './components/shopping-cart/ver-carrito/ver-carrito.component';
 import { VerCarritoItemComponent } from './components/shopping-cart/ver-carrito/ver-carrito-item/ver-carrito-item.component';
+import { PagarComponent } from './components/pagar/pagar.component';
+import { DetalleCompraComponent } from './components/detalle-compra/detalle-compra.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +49,8 @@ import { VerCarritoItemComponent } from './components/shopping-cart/ver-carrito/
     RegistroComponent,
     VerCarritoComponent,
     VerCarritoItemComponent,
+    PagarComponent,
+    DetalleCompraComponent,
     
   ],
   imports: [
@@ -67,6 +71,8 @@ import { VerCarritoItemComponent } from './components/shopping-cart/ver-carrito/
         {path: 'carrito', component: CartComponent},
         {path: 'productos', component: ShoppingCartComponent},
         {path: 'verCarro', component: VerCarritoComponent},
+        {path: 'pagar', component: PagarComponent},
+        {path: 'detalle-compra', component:DetalleCompraComponent},
         {path: '**', component: PageNotFoundComponent},
         
       ]
