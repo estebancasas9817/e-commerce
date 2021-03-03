@@ -28,33 +28,42 @@
 .contenedor__logOut {
   position: absolute;
   top: 40%;
-  right: 5%;
+  right: 2%;
+}
+.fa-shopping-cart {
+  margin-left: 2.5rem;
+}
+
+.contenedor__verListado {
+  position: absolute;
+  top: 40%;
+  right: 8%;
 }
 
 .icono {
   position: absolute;
   top: 40%;
-  right: 15%;
+  right: 18%;
 }
 
 .fa-user-cog {
-  margin-left: 3.2rem;
+  margin-left: 2.2rem;
 }
 .fa-sign-out-alt {
   margin-left: 1.2rem;
 }
 .fa-user {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #000;
   display: inline-block;
 }
 
 small {
   display: block;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 .hidden {

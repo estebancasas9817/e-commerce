@@ -30,6 +30,10 @@ export class CartItemComponent implements OnInit {
       (data) => {
         this.getAllEmployee();
       });
+      this.cartService.eliminarLista(id).subscribe(
+        (data) => {
+          this.getAllEmployee();
+        });
   }
 
 }

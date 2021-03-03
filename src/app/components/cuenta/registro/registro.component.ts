@@ -38,8 +38,11 @@ export class RegistroComponent implements OnInit {
   register() {
     const textoUsuario = document.querySelector(".textoUsuario");
     const logOut = document.querySelector(".contenedor__logOut");
-    textoUsuario.textContent = this.registerForm.value.nombre
+    const verListado = document.querySelector(".contenedor__verListado");
+
+    textoUsuario.textContent = this.registerForm.value.nombre;
     logOut.classList.toggle("hidden");
+    verListado.classList.toggle("hidden");
   }
 
 }

@@ -49,11 +49,19 @@ export class DetalleCompraComponent implements OnInit {
     this.cartService.getAllEmployee();
   }
 
-  eliminarCarro(id: number) {
-    this.cartService.eliminarCarro(id).subscribe(
-      (data) => {
-        this.getAllEmployee();
-      });
+  eliminarCarro() {
+    console.log("entra");
+    for(let i = 1; i < 28; i ++) {
+      this.cartService.eliminarCarros(i).subscribe(
+        (data) => {
+          this.getAllEmployee();
+        });
+
+      }
   }
 
 }
+
+  
+
+

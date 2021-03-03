@@ -28,6 +28,7 @@ import { VerCarritoComponent } from './components/shopping-cart/ver-carrito/ver-
 import { VerCarritoItemComponent } from './components/shopping-cart/ver-carrito/ver-carrito-item/ver-carrito-item.component';
 import { PagarComponent } from './components/pagar/pagar.component';
 import { DetalleCompraComponent } from './components/detalle-compra/detalle-compra.component';
+import { ListadoComprasComponent } from './components/listado-compras/listado-compras.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,6 +52,7 @@ import { DetalleCompraComponent } from './components/detalle-compra/detalle-comp
     VerCarritoItemComponent,
     PagarComponent,
     DetalleCompraComponent,
+    ListadoComprasComponent,
     
   ],
   imports: [
@@ -73,6 +75,7 @@ import { DetalleCompraComponent } from './components/detalle-compra/detalle-comp
         {path: 'verCarro', component: VerCarritoComponent},
         {path: 'pagar', component: PagarComponent},
         {path: 'detalle-compra', component:DetalleCompraComponent},
+        {path: 'listado-compras', component:ListadoComprasComponent},
         {path: '**', component: PageNotFoundComponent},
         
       ]

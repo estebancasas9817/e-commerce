@@ -18,12 +18,14 @@ export class LoginComponent implements OnInit {
   login(){
     const textoUsuario = document.querySelector(".textoUsuario");
     const logOut = document.querySelector(".contenedor__logOut");
+    const verListado = document.querySelector(".contenedor__verListado");
     this.usuarioService.getUsuarios().subscribe(usuarios =>{
       this.listaUsuarios = usuarios;    
       for(let i in this.listaUsuarios){
         if(this.listaUsuarios[i].email === this.model.userEmail && this.listaUsuarios[i].clave === this.model.userPassword) {
           textoUsuario.textContent = this.listaUsuarios[i].nombre;
           logOut.classList.toggle("hidden");
+          verListado.classList.toggle("hidden");
         }
       }
     }) 

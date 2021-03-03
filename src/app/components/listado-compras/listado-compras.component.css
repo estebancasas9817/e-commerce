@@ -54,12 +54,17 @@ h1 {
   letter-spacing: 0.4rem;
 }
 
-.total {
-  margin-bottom: 1rem;
+.btnPagar {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  margin-left: 7.3rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 
-p {
-  display: inline-block;
-  text-align: end;
-  font-size: 0.8rem;
+.total {
+  margin-bottom: 1rem;
 }

@@ -3,6 +3,7 @@ import { Product } from 'src/app/models/product';
 import { MessengerService } from 'src/app/services/messenger.service';
 import { CartService } from 'src/app/services/cart.service';
 
+
 @Component({
   selector: 'app-product-item',
   templateUrl: './product-item.component.html',
@@ -14,7 +15,8 @@ export class ProductItemComponent implements OnInit {
 
   constructor(
     private msg: MessengerService,
-    private cartService: CartService
+    private cartService: CartService,
+    private listadoService: CartService
   ) { }
 
   ngOnInit() {
@@ -22,6 +24,9 @@ export class ProductItemComponent implements OnInit {
 
   handleAddToCart() {
     this.cartService.addProductToCart(this.productItem).subscribe(() => {
+      this.msg.sendMsg(this.productItem)
+    })
+    this.listadoService.addProductToList(this.productItem).subscribe(() => {
       this.msg.sendMsg(this.productItem)
     })
   }
