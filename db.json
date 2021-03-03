@@ -223,6 +223,20 @@
       "email": "patricia@gmail.com",
       "clave": "patricia2021",
       "id": 3
+    },
+    {
+      "nombre": "Juan",
+      "apellido": "Mendez",
+      "email": "juan@gmail.com",
+      "clave": "juan",
+      "id": 4
+    },
+    {
+      "nombre": "hola",
+      "apellido": "hola",
+      "email": "hola@hola",
+      "clave": "hola",
+      "id": 5
     }
   ],
   "compras": [
