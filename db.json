@@ -190,18 +190,7 @@
       "price": 59
     }
   ],
-  "cart": [
-    {
-      "product": {
-        "id": 1,
-        "name": "Bikini Top - Sand",
-        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-sand-1_720x720.jpg?v=1607521703",
-        "price": 75
-      },
-      "id": 1
-    }
-  ],
+  "cart": [],
   "usuarios": [
     {
       "nombre": "Esteban",
@@ -225,31 +214,28 @@
       "id": 3
     },
     {
-      "nombre": "Juan",
-      "apellido": "Mendez",
-      "email": "juan@gmail.com",
-      "clave": "juan",
+      "nombre": "juan",
+      "apellido": "mendez",
+      "email": "juan2@gmail.com",
+      "clave": "juan2",
       "id": 4
     },
     {
-      "nombre": "hola",
-      "apellido": "hola",
-      "email": "hola@hola",
-      "clave": "hola",
+      "nombre": "Estabanano",
+      "apellido": "orzuelas",
+      "email": "e1@gmail.com",
+      "clave": "esteban",
       "id": 5
+    },
+    {
+      "nombre": "prueba4",
+      "apellido": "prueba",
+      "email": "prueba@gmail.com",
+      "clave": "prueba",
+      "id": 6
     }
   ],
   "compras": [
-    {
-      "product": {
-        "id": 3,
-        "name": "Bikini Top - Black",
-        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
-        "price": 75
-      },
-      "id": 2
-    },
     {
       "product": {
         "id": 5,
@@ -299,6 +285,176 @@
         "price": 75
       },
       "id": 7
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Bikini Top - Black",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
+        "price": 75
+      },
+      "id": 8
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Bikini Top - Leopard",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1_720x.jpg?v=1607521639",
+        "price": 80
+      },
+      "id": 9
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Bikini Top - Black",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
+        "price": 75
+      },
+      "id": 10
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Bikini Top - Leopard",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1_720x.jpg?v=1607521639",
+        "price": 80
+      },
+      "id": 11
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Bikini Top - Black",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
+        "price": 75
+      },
+      "id": 12
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Bikini Top - Black",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
+        "price": 75
+      },
+      "id": 13
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Bikini Top - Black",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
+        "price": 75
+      },
+      "id": 14
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Bikini Top - Black",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
+        "price": 75
+      },
+      "id": 15
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Bikini Top - Black",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
+        "price": 75
+      },
+      "id": 16
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Bikini Top - Leopard",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1_720x.jpg?v=1607521639",
+        "price": 80
+      },
+      "id": 17
+    },
+    {
+      "product": {
+        "id": 6,
+        "name": "Bikini Bottom - Black",
+        "description": "Bikini panty en lycra( 84% poliamida, 16% elastano)logo estampado en vinilo textil.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-bottom-black-1_720x.jpg?v=1607521094",
+        "price": 65
+      },
+      "id": 18
+    },
+    {
+      "product": {
+        "id": 5,
+        "name": "Bikini Bottom - Leopard",
+        "description": "Bikini panty en lycra( 84% poliamida, 16% elastano)logo estampado en vinilo textil.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-bottom-leopard-1_720x.jpg?v=1607521264",
+        "price": 70
+      },
+      "id": 19
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Bikini Top - Black",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
+        "price": 75
+      },
+      "id": 20
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Bikini Top - Black",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
+        "price": 75
+      },
+      "id": 21
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Bikini Top - Black",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
+        "price": 75
+      },
+      "id": 22
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Bikini Top - Leopard",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1_720x.jpg?v=1607521639",
+        "price": 80
+      },
+      "id": 23
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Bikini Top - Leopard",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1_720x.jpg?v=1607521639",
+        "price": 80
+      },
+      "id": 24
     }
   ],
   "posts": [

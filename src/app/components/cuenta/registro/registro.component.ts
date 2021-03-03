@@ -18,6 +18,20 @@ export class RegistroComponent implements OnInit {
 
   ngOnInit(): void {
     this.buildForm();
+    const usuario = localStorage.getItem('usuario');
+    const textoUsuario = document.querySelector(".textoUsuario");
+    const logOut = document.querySelector(".contenedor__logOut");
+    const verListado = document.querySelector(".contenedor__verListado");
+      if(usuario != null)
+      {
+      textoUsuario.textContent = usuario; 
+      if(logOut.classList.contains("hidden") === true)
+      {
+        logOut.classList.toggle("hidden");
+        verListado.classList.toggle("hidden");
+      }
+      
+      }
   }
 
   agregarUser() {
@@ -39,10 +53,16 @@ export class RegistroComponent implements OnInit {
     const textoUsuario = document.querySelector(".textoUsuario");
     const logOut = document.querySelector(".contenedor__logOut");
     const verListado = document.querySelector(".contenedor__verListado");
+    const usuario = localStorage.getItem('usuario');
+    if(usuario == null)
+    {
 
     textoUsuario.textContent = this.registerForm.value.nombre;
     logOut.classList.toggle("hidden");
     verListado.classList.toggle("hidden");
+    }else{
+      alert("primero cierre la sesion activa para crear un nuevo usuario");
+    }
   }
 
 }

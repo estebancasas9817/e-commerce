@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit {
       contenedorLogout.classList.toggle("hidden");
       contenedor__verListado.classList.toggle("hidden");
       usuario.textContent = "Usuario";
+      localStorage.clear();
     })
   }
 
