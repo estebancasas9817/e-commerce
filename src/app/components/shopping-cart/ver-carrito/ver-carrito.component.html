@@ -41,7 +41,7 @@
     
 </table>
 
-<div class="contenedor">
+<div class="contenedor" *ngIf="cartItems.length > 0">
     <h2 class="total">Total: {{cartTotal | currency: 'USD'}}</h2>
     <a [routerLink]="['/pagar']" class="btnPagar">Ir a pagar</a>
     

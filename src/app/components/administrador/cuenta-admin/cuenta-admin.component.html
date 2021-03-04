@@ -1,0 +1,34 @@
+<h2>Log-in Administrador</h2>
+    <form action="" class="contact__form"
+     #loginForm="ngForm"
+      (ngSubmit)="loginForm.valid && loginAdmin()">
+
+        <input type="text" class="contact__name input" placeholder="Usuario" required
+        [(ngModel)]="model.adminUsername" 
+        #adminEmail="ngModel"
+        id="adminUsername"
+        name="adminUsername">
+        <label for="" 
+        class="contact__label" 
+        >Usuario</label>
+        <input type="email" class=" input" placeholder="Email" required
+        [(ngModel)]="model.adminEmail" 
+        #userEmail="ngModel"
+        id="adminEmail"
+        name="adminEmail">
+        <label for="" 
+        class="contact__label" 
+        >Email</label>
+
+        <input type="password"
+         class=" input"
+          placeholder="Contraseña"
+           required
+           #adminPassword="ngModel"
+        [(ngModel)]="model.adminPassword" 
+        id="adminPassword"
+        name="adminPassword">
+        <label for="" class="contact__label">Contraseña</label>
+        <a [routerLink] = "['/panel-admin']" class="contact__enviar">Iniciar Sesion</a>
+            
+    </form>

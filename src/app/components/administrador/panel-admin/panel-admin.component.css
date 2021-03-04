@@ -1,0 +1,43 @@
+.panel-izq {
+  width: 20%;
+  height: 100vh;
+  float: left;
+  background-color: #f6f6f696;
+}
+
+.panel-izq__contenedor-img {
+  padding-top: 2rem;
+}
+
+.texto-navegacion {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  color: black;
+}
+ul {
+  margin-left: 3rem;
+}
+li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: dimgrey;
+}
+
+.columna {
+  width: 80%;
+  height: 100vh;
+  float: left;
+  background-color: forestgreen;
+}

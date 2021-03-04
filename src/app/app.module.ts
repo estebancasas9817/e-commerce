@@ -29,6 +29,10 @@ import { VerCarritoItemComponent } from './components/shopping-cart/ver-carrito/
 import { PagarComponent } from './components/pagar/pagar.component';
 import { DetalleCompraComponent } from './components/detalle-compra/detalle-compra.component';
 import { ListadoComprasComponent } from './components/listado-compras/listado-compras.component';
+import { PanelAdminComponent } from './components/administrador/panel-admin/panel-admin.component';
+import { CrudAdminComponent } from './components/administrador/crud-admin/crud-admin.component';
+import { ReporteVentasAdminComponent } from './components/administrador/reporte-ventas-admin/reporte-ventas-admin.component';
+import { CuentaAdminComponent } from './components/administrador/cuenta-admin/cuenta-admin.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +57,10 @@ import { ListadoComprasComponent } from './components/listado-compras/listado-co
     PagarComponent,
     DetalleCompraComponent,
     ListadoComprasComponent,
+    PanelAdminComponent,
+    CrudAdminComponent,
+    ReporteVentasAdminComponent,
+    CuentaAdminComponent,
     
   ],
   imports: [
@@ -76,6 +84,10 @@ import { ListadoComprasComponent } from './components/listado-compras/listado-co
         {path: 'pagar', component: PagarComponent},
         {path: 'detalle-compra', component:DetalleCompraComponent},
         {path: 'listado-compras', component:ListadoComprasComponent},
+        {path: 'reporte-ventas', component:ReporteVentasAdminComponent},
+        {path: 'crud-admin', component:CrudAdminComponent},
+        {path: 'panel-admin', component:PanelAdminComponent},
+        {path: 'cuenta-admin', component:CuentaAdminComponent},
         {path: '**', component: PageNotFoundComponent},
         
       ]

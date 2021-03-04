@@ -7,10 +7,9 @@
 .header__logo {
   height: 5rem;
   width: 15%;
-  background-position: center;
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
 }
 

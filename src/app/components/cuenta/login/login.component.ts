@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuariosService } from 'src/app/services/usuarios.service'
 import { Usuarios } from 'src/app/models/usuarios';
-import { ResourceLoader } from '@angular/compiler';
 
 @Component({
   selector: 'app-login',
@@ -55,13 +54,4 @@ export class LoginComponent implements OnInit {
     
     }) 
   }
-
-  
-
-
-    
-    
-    
-  
-
 }
