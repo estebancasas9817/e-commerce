@@ -1,53 +1,11 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Bikini Top - Sand",
-      "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-sand-1_720x720.jpg?v=1607521703",
-      "price": 75
-    },
-    {
-      "id": 2,
-      "name": "Bikini Top - Leopard",
-      "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1_720x.jpg?v=1607521639",
-      "price": 80
-    },
-    {
-      "id": 3,
-      "name": "Bikini Top - Black",
-      "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano),estampado en vinilo textil con cargadera elástica.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-black-1_720x.jpg?v=1607521610",
-      "price": 75
-    },
-    {
-      "id": 4,
-      "name": "Bikini Bottom - Sand",
-      "description": "Bikini panty en lycra( 84% poliamida, 16% elastano)logo estampado en vinilo textil.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-bottom-sand-1_720x.jpg?v=1607521343",
-      "price": 65
-    },
-    {
-      "id": 5,
-      "name": "Bikini Bottom - Leopard",
-      "description": "Bikini panty en lycra( 84% poliamida, 16% elastano)logo estampado en vinilo textil.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-bottom-leopard-1_720x.jpg?v=1607521264",
-      "price": 70
-    },
-    {
-      "id": 6,
-      "name": "Bikini Bottom - Black",
-      "description": "Bikini panty en lycra( 84% poliamida, 16% elastano)logo estampado en vinilo textil.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-bottom-black-1_720x.jpg?v=1607521094",
-      "price": 65
-    },
-    {
-      "id": 7,
       "name": "High Waist Bikini Bottom - Bone",
       "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+      "price": 70,
       "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-bone-1_720x.jpg?v=1607522293",
-      "price": 70
+      "id": 7
     },
     {
       "id": 8,
@@ -188,6 +146,27 @@
       "description": "Medias en algodón con fondeado caras felices y logo (TRUE) en la planta del pie.",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-happy-socks-pack-1_720x.jpg?v=1607985240",
       "price": 59
+    },
+    {
+      "name": "True Classic Bucket Hat - Kiwi",
+      "description": "Gorro pescador en drill, unisex, con bordado en frente y forro interno",
+      "price": 60,
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-bucket-hat-kiwi-1.jpg?v=1604510318",
+      "id": 28
+    },
+    {
+      "name": "True Bikini Top - Leopard",
+      "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano) con elástico base marcado (TRUE) logo estampado en vinilo textil con cargadera elástica.",
+      "price": 80,
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1.jpg?v=1607521639",
+      "id": 2
+    },
+    {
+      "name": "True Bikini Top - Leopard",
+      "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano) con elástico base marcado (TRUE) logo estampado en vinilo textil con cargadera elástica.",
+      "price": 80,
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1.jpg?v=1607521639",
+      "id": 40
     }
   ],
   "cart": [],
@@ -199,7 +178,15 @@
       "id": 1
     }
   ],
-  "usuarios": [],
+  "usuarios": [
+    {
+      "nombre": "Esteban",
+      "apellido": "Casas",
+      "email": "estebancasas9817@gmail.com",
+      "clave": "esteban",
+      "id": 1
+    }
+  ],
   "compras": [],
   "posts": [
     {

@@ -1,1 +1,92 @@
-<p>crud-admin works!</p>
+<div class="row">
+    <div class="col-md-5">
+        <form action="" class="contact__form"
+      (ngSubmit)="crud()"
+      [formGroup]="registroForm">
+        <input type="text" 
+        class="contact__name input inputNombreProducto" 
+        placeholder="Nombre del producto" 
+        required
+        formControlName="name">
+        <label for="" 
+        class="contact__label" 
+        >Nombre Del producto</label>
+
+        <input type="text"
+         class=" input inputDescripcionProducto"
+          placeholder="Descripcion del producto"
+           required
+           formControlName="description">
+        <label for="" class="contact__label">Descripcion del producto</label>
+
+
+        <input type="number"
+         class=" input inputPrecioProducto"
+          placeholder="Precio del producto"
+           required
+           formControlName="price">
+        <label for="" class="contact__label">Precio del producto</label>
+
+
+        <input type="number"
+         class=" input inputIdProducto"
+          placeholder="Id del producto"
+           required
+           formControlName="id">
+        <label for="" class="contact__label">Id del producto</label>
+
+        <input type="text"
+         class=" input inputImagenProducto"
+          placeholder="Imagen URL del producto"
+           required
+           formControlName="imageUrl">
+        <label for="" class="contact__label">Imagen URL del producto</label>
+        <a class="btnSubmit" type="submit"  class="contact__enviar"
+        (click) ="agregar()" href="/panel-admin">Agregar Producto</a>
+        <a type="submit"  class="btnSubmit" class="contact__enviar"
+        (click) ="editar()" href="/panel-admin">Editar Producto</a>
+    </form>
+    </div>
+
+    <div class="col-md-6">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" class="tamanio"></th>
+                    <th scope="col" class="tamanio">Producto</th>
+                    <th scope="col" class="tamanio">Precio</th>
+                    <th scope="col" class="tamanio">Descripción</th>
+                    <th scope="col" class="tamanio">Id</th>
+                    <th scope="col" class="tamanio">Editar</th>
+                    <th scope="col" class="tamanio">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of productList">
+                    <td scope="row" class="imagen" >
+                        <img [src]="item.imageUrl" width="60%" alt="">
+                    </td>
+                    <th scope="row" class="tamanioInfo">{{item.name}}</th>
+                    <td scope="row" class="tamanioInfo">{{item.price | currency:'USD'}}</td>
+                    <td scope="row" class="tamanioInfo itemCantidad">{{item.description}}</td>
+                    <td scope="row" class="tamanioInfo"> {{item.id}}</td>
+                    <td>
+                        <a class="btn" (click)="editProduct(item)">
+                          <i class="fa fa-edit"></i>
+                        </a>
+                      </td>
+
+                    <td>
+                        <a class="btn text-danger" (click)="eliminar(item)">
+                          <i class="fa fa-trash"></i>
+                        </a>
+                      </td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+</div>
+
+
+

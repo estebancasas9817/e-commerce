@@ -2,10 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GrillaHomeComponent } from './components/grilla-home/grilla-home.component';
 
-const routes: Routes = [
-  // {path:'',redirectTo:'/home', pathMatch:'full'},
-  {path:'home',component:GrillaHomeComponent}
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
