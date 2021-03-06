@@ -6,3 +6,4 @@ export const cartUrl = baseUrl + '/cart';
 export const usuariosUrl = baseUrl +'/usuarios';
 export const listadoUrl = baseUrl +'/compras';
 export const adminUrl = baseUrl +'/admin';
+export const detalleUrl = baseUrl +'/detalle-compra';

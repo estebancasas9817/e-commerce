@@ -1,0 +1,93 @@
+.contenedor-ventas {
+  background-color: #f6f6f6;
+  margin-top: -0.4rem;
+}
+.texto-reporte {
+  background-color: black;
+  color: #fff;
+  height: 4rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.grilla {
+  max-width: 114rem;
+  height: 5.5rem;
+}
+
+.columna {
+  display: inline-block;
+  width: 31%;
+  height: 10rem;
+}
+
+.columna:first-child {
+  margin-left: 1rem;
+}
+
+.columna:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.contenedor-izq {
+  float: left;
+  width: 40%;
+  height: 5rem;
+}
+
+.contenedor {
+  float: left;
+  width: 60%;
+  height: 3rem;
+  background-color: #fff;
+  height: 5rem;
+}
+
+.fas {
+  font-size: 4rem;
+  display: inline-block;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+}
+
+.fab {
+  font-size: 4rem;
+  display: inline-block;
+  margin-left: 2.5rem;
+  margin-top: 0.7rem;
+}
+
+.texto-cajas {
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.fas,
+.fab {
+  color: #fff;
+}
+
+.numero-total {
+  color: #000;
+  font-weight: 800;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 5rem;
+}
+
+.cont--1 {
+  background-color: #00a65a;
+}
+
+.cont--2 {
+  background-color: #dd4b39;
+}
+
+.cont--3 {
+  background-color: #f39c12;
+}
+
+.imagen {
+  width: 6rem;
+}

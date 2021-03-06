@@ -1,16 +1,63 @@
+<h2 class="texto-reporte">Reporte de ventas</h2>
 <div class="contenedor-ventas">
-    <h2 class="texto-reporte">Reporte de ventas</h2>
     <div class="grilla">
         <div class="fila">
             <div class="columna">
-                <h4 class="texto-cajas">Clientes</h4>
-                <span class="numero-total">4000</span>
+                <div class="contenedor-izq cont--1">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="contenedor">
+                    <h4 class="texto-cajas">Clientes Registrados</h4>
+                    <span class="numero-total clientesTotales">50</span>
+                </div> 
+            </div>
+            <div class="columna">
+                <div class="contenedor-izq cont--2">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="contenedor" >
+                    <h4 class="texto-cajas">Ganacia Total</h4>
+                    <span class="numero-total ganancia"></span>
+                </div>
+                
             </div>
 
             <div class="columna">
-                <h4 class="texto-cajas">Pedidos</h4>
-                <span class="numero-total">5,517</span>
+                <div class="contenedor-izq cont--3">
+                    <i class="fab fa-shopify"></i>
+                </div>
+                <div class="contenedor">
+                    <h4 class="texto-cajas">Productos Vendidos</h4>
+                    <span class="numero-total pedidosTotales"></span>
+                </div>
+
             </div>
         </div>
     </div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col" class="tamanio"></th>
+                <th scope="col" class="tamanio">Producto</th>
+                <th scope="col" class="tamanio">ID</th>
+                <th scope="col" class="tamanio">Fecha</th>
+                <th scope="col" class="tamanio">Cantidad</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of cartItems">
+                <td scope="row" class="imagen" >
+                    <img [src]="item.productImage" width="100%" alt="">
+                </td>
+                <th scope="row" class="tamanioInfo">{{item.productName}}</th>
+                <td scope="row" class="tamanioInfo">{{item.productId}}</td>
+                <td scope="row" class="tamanioInfo itemCantidad">{{item.date}}</td>
+                <td scope="row" class="tamanioInfo itemCantidad">{{item.qty}}</td>
+                
+                
+            </tr>
+        </tbody>
+        
+    </table>
 </div>

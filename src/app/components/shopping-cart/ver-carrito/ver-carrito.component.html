@@ -22,6 +22,7 @@
             <th scope="col" class="tamanio">Precio</th>
             <th scope="col" class="tamanio">Cantidad</th>
             <th scope="col" class="tamanio">Total</th>
+            <th scope="col" class="tamanio">Fecha</th>
             <th scope="col" class="tamanio">Eliminar</th>
         </tr>
     </thead>
@@ -34,6 +35,8 @@
             <td scope="row" class="tamanioInfo">{{item.price | currency:'USD'}}</td>
             <td scope="row" class="tamanioInfo itemCantidad">{{item.qty}}</td>
             <td scope="row" class="tamanioInfo">{{(item.qty * item.price) | currency:'USD'}}</td>
+            <td scope="row" class="tamanioInfo itemCantidad">{{item.date}}</td>
+
             <td scope="row" class="tamanioInfo">
                 <a href="/verCarro" (click)="eliminarCarro(item.id)" class="btnEliminar">X</a></td>
         </tr>

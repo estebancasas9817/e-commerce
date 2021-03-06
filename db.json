@@ -170,6 +170,7 @@
     }
   ],
   "cart": [],
+  "detalle-compra": [],
   "admin": [
     {
       "usuario": "wilmer-arley",
@@ -185,9 +186,67 @@
       "email": "estebancasas9817@gmail.com",
       "clave": "esteban",
       "id": 1
+    },
+    {
+      "nombre": "Juan",
+      "apellido": "Mendez",
+      "email": "juan@gmail.com",
+      "clave": "juan123",
+      "id": 2
     }
   ],
-  "compras": [],
+  "compras": [
+    {
+      "product": {
+        "name": "True Classic Bucket Hat - Kiwi",
+        "description": "Gorro pescador en drill, unisex, con bordado en frente y forro interno",
+        "price": 60,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-bucket-hat-kiwi-1.jpg?v=1604510318",
+        "id": 28
+      },
+      "id": 1
+    },
+    {
+      "product": {
+        "name": "True Bikini Top - Leopard",
+        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano) con elástico base marcado (TRUE) logo estampado en vinilo textil con cargadera elástica.",
+        "price": 80,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1.jpg?v=1607521639",
+        "id": 40
+      },
+      "id": 2
+    },
+    {
+      "product": {
+        "name": "High Waist Bikini Bottom - Bone",
+        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+        "price": 70,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-bone-1_720x.jpg?v=1607522293",
+        "id": 7
+      },
+      "id": 3
+    },
+    {
+      "product": {
+        "name": "True Classic Bucket Hat - Kiwi",
+        "description": "Gorro pescador en drill, unisex, con bordado en frente y forro interno",
+        "price": 60,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-bucket-hat-kiwi-1.jpg?v=1604510318",
+        "id": 28
+      },
+      "id": 4
+    },
+    {
+      "product": {
+        "name": "True Classic Bucket Hat - Kiwi",
+        "description": "Gorro pescador en drill, unisex, con bordado en frente y forro interno",
+        "price": 60,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-bucket-hat-kiwi-1.jpg?v=1604510318",
+        "id": 28
+      },
+      "id": 5
+    }
+  ],
   "posts": [
     {
       "id": 1,

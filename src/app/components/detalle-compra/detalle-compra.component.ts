@@ -23,6 +23,14 @@ export class DetalleCompraComponent implements OnInit {
     this.handleSubscription();
     this.loadCartItems();
     this.getAllEmployee();
+
+    for(let i = 1; i < 30; i ++) {
+      this.cartService.eliminarCarros(i).subscribe(
+        (data) => {
+          this.getAllEmployee();
+        });
+
+      }
   }
 
   handleSubscription() {
@@ -32,7 +40,7 @@ export class DetalleCompraComponent implements OnInit {
   }
 
   loadCartItems() {
-    this.cartService.getCartItems().subscribe((items: Cart[]) => {
+    this.cartService.getDetalleItems().subscribe((items: Cart[]) => {
       this.cartItems = items;
       this.calcCartTotal();
     })
@@ -49,16 +57,17 @@ export class DetalleCompraComponent implements OnInit {
     this.cartService.getAllEmployee();
   }
 
-  eliminarCarro() {
-    console.log("entra");
-    for(let i = 1; i < 28; i ++) {
-      this.cartService.eliminarCarros(i).subscribe(
+  eliminarCarro(){
+    for(let i = 1; i < 30; i ++) {
+      this.cartService.eliminarDetalle(i).subscribe(
         (data) => {
           this.getAllEmployee();
         });
 
       }
   }
+
+  
 
 }
 

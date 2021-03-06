@@ -16,17 +16,26 @@ export class ProductItemComponent implements OnInit {
   constructor(
     private msg: MessengerService,
     private cartService: CartService,
-    private listadoService: CartService
+    private listadoService: CartService,
+    private detalleService: CartService
   ) { }
 
   ngOnInit() {
   }
 
   handleAddToCart() {
+    const tiempo = new Date();
+    const date =tiempo.getDate()+'/'+(tiempo.getMonth())+'/'+(tiempo.getFullYear());
+    this.productItem
     this.cartService.addProductToCart(this.productItem).subscribe(() => {
       this.msg.sendMsg(this.productItem)
     })
+
     this.listadoService.addProductToList(this.productItem).subscribe(() => {
+      this.msg.sendMsg(this.productItem)
+    })
+
+    this.detalleService.addProductToDetalle(this.productItem).subscribe(() => {
       this.msg.sendMsg(this.productItem)
     })
   }

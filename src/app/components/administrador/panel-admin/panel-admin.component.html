@@ -5,14 +5,15 @@
         </div>
         <h3 class="texto-navegacion">Navegación</h3>
         <ul>
-            <li><a href="">Ver productos</a></li>
-            <li><a href="">Ver reportes de ventas</a></li>
+            <li><a  class="verProductosLink"><span class="spanProductos">&rarr;</span>Ver productos</a></li>
+            <li><a class="verReporteslink"><span class="spanReportes hiddenSpan">&rarr;</span>Ver reportes de ventas</a></li>
         </ul>
     </aside>
 
     <div class="columna">
 
         
-        <app-crud-admin></app-crud-admin>
+        <app-crud-admin class="crud"></app-crud-admin>
+        <app-reporte-ventas-admin class="reporteVentas hidden"></app-reporte-ventas-admin>
     </div>
 </section>

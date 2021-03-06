@@ -84,3 +84,11 @@
   color: #fff;
   text-decoration: none;
 }
+
+h2 {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

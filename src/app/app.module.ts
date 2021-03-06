@@ -88,6 +88,7 @@ import { CuentaAdminComponent } from './components/administrador/cuenta-admin/cu
         {path: 'crud-admin', component:CrudAdminComponent},
         {path: 'panel-admin', component:PanelAdminComponent},
         {path: 'cuenta-admin', component:CuentaAdminComponent},
+        {path: 'reportes-admin', component:ReporteVentasAdminComponent},
         {path: '**', component: PageNotFoundComponent},
         
       ]
