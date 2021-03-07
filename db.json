@@ -271,6 +271,36 @@
         "price": 59
       },
       "id": 13
+    },
+    {
+      "product": {
+        "name": "Basic T-Shirt - Black",
+        "description": "Basic T-Shirt - Military Green",
+        "price": 70,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-b-01_720x720.png?v=1613785193",
+        "id": 9
+      },
+      "id": 14
+    },
+    {
+      "product": {
+        "id": 8,
+        "name": "High Waist Bikini Bottom - Sand",
+        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
+        "price": 70
+      },
+      "id": 15
+    },
+    {
+      "product": {
+        "name": "High Waist Bikini Bottom - Bone",
+        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+        "price": 70,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-bone-1_720x.jpg?v=1607522293",
+        "id": 7
+      },
+      "id": 16
     }
   ],
   "posts": [
