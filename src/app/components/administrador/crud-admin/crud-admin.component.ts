@@ -80,6 +80,7 @@ export class CrudAdminComponent implements OnInit {
   }
 
   createProduct(emp: Product) {
+    console.log("este es: ",emp);
     this.productService.createProduct(emp).subscribe(
       (result: Product) => {
         this.productService.getAllEmployee();

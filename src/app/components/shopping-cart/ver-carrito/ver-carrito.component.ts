@@ -51,11 +51,15 @@ export class VerCarritoComponent implements OnInit {
       (data) => {
         this.getAllEmployee();
       });
-
       this.cartService.eliminarLista(id).subscribe(
         (data) => {
           this.getAllEmployee();
         });
+  
+        this.cartService.eliminarDetalle(id).subscribe(
+          (data) => {
+            this.getAllEmployee();
+          });
   }
 
 }

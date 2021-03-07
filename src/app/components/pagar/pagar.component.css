@@ -6,11 +6,6 @@ h2 {
   height: 35rem;
   width: 100%;
 }
-.contact__enviar--registro {
-  text-decoration: none;
-  transition: all 0.2s;
-  margin-bottom: 14rem;
-}
 
 .cliente {
   padding: 1rem 0;
@@ -69,12 +64,12 @@ h2 {
   display: inline-block;
   text-align: center;
   padding: 1rem 2rem;
-  background-color: #000;
   color: #fff;
   text-transform: uppercase;
   transition: all 0.2s;
   font-size: 1rem;
-  border-radius: 1rem;
+  border-radius: 10rem;
+  background-color: #000;
   border: none;
   margin: 1rem 56rem;
 }

@@ -15,11 +15,11 @@
       "price": 70
     },
     {
-      "id": 9,
-      "name": "Basic T-Shirt Box Logo - Black",
-      "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+      "name": "Basic T-Shirt - Black",
+      "description": "Basic T-Shirt - Military Green",
+      "price": 70,
       "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-b-01_720x720.png?v=1613785193",
-      "price": 70
+      "id": 9
     },
     {
       "id": 10,
@@ -162,23 +162,22 @@
       "id": 2
     },
     {
-      "name": "True Bikini Top - Leopard",
-      "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano) con elástico base marcado (TRUE) logo estampado en vinilo textil con cargadera elástica.",
-      "price": 80,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1.jpg?v=1607521639",
-      "id": 40
+      "name": "True High Waisted Pants - Paisley",
+      "description": "Pantalón ancho en drill combinación camel y negro estampado, bolsillos en frente, marquilla exterior bordada frente lateral, bolsillos parche posterior, banderín a un lateral del bolsillo posterior , elástico ajustable con tanca metálica en bota.",
+      "price": 195,
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waisted-pants-paisley-1.jpg?v=1607985639",
+      "id": 3000
+    },
+    {
+      "name": "True Bob Overall - Light Blue",
+      "description": "Overall en denim cielo con silueta ancha, bolsillos frente , marquilla exterior (TRUE) bordada frente , bolsillos parche posterior, banderín a un lateral del bolsillo posterior , elástico ajustable con tanca metálica en bota, con costuras resaltantes a contraste en blanco, pasador a un lateral",
+      "price": 210,
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bob-overall-light-blue-1.jpg?v=1607984886",
+      "id": 900
     }
   ],
   "cart": [],
   "detalle-compra": [],
-  "admin": [
-    {
-      "usuario": "wilmer-arley",
-      "correo": "wilmer@gmail.com",
-      "clave": "wilmer123",
-      "id": 1
-    }
-  ],
   "usuarios": [
     {
       "nombre": "Esteban",
@@ -193,58 +192,85 @@
       "email": "juan@gmail.com",
       "clave": "juan123",
       "id": 2
+    },
+    {
+      "nombre": "Juliana",
+      "apellido": "Casas",
+      "email": "juliana@gmail.com",
+      "clave": "lola",
+      "id": 3
     }
   ],
   "compras": [
     {
       "product": {
-        "name": "True Classic Bucket Hat - Kiwi",
-        "description": "Gorro pescador en drill, unisex, con bordado en frente y forro interno",
-        "price": 60,
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-bucket-hat-kiwi-1.jpg?v=1604510318",
-        "id": 28
-      },
-      "id": 1
-    },
-    {
-      "product": {
-        "name": "True Bikini Top - Leopard",
-        "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano) con elástico base marcado (TRUE) logo estampado en vinilo textil con cargadera elástica.",
-        "price": 80,
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1.jpg?v=1607521639",
-        "id": 40
-      },
-      "id": 2
-    },
-    {
-      "product": {
-        "name": "High Waist Bikini Bottom - Bone",
-        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+        "name": "Basic T-Shirt - Black",
+        "description": "Basic T-Shirt - Military Green",
         "price": 70,
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-bone-1_720x.jpg?v=1607522293",
-        "id": 7
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-b-01_720x720.png?v=1613785193",
+        "id": 9
       },
-      "id": 3
+      "id": 7
     },
     {
       "product": {
-        "name": "True Classic Bucket Hat - Kiwi",
-        "description": "Gorro pescador en drill, unisex, con bordado en frente y forro interno",
-        "price": 60,
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-bucket-hat-kiwi-1.jpg?v=1604510318",
-        "id": 28
+        "id": 8,
+        "name": "High Waist Bikini Bottom - Sand",
+        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
+        "price": 70
       },
-      "id": 4
+      "id": 8
     },
     {
       "product": {
-        "name": "True Classic Bucket Hat - Kiwi",
-        "description": "Gorro pescador en drill, unisex, con bordado en frente y forro interno",
-        "price": 60,
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-bucket-hat-kiwi-1.jpg?v=1604510318",
-        "id": 28
+        "id": 8,
+        "name": "High Waist Bikini Bottom - Sand",
+        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
+        "price": 70
       },
-      "id": 5
+      "id": 9
+    },
+    {
+      "product": {
+        "id": 8,
+        "name": "High Waist Bikini Bottom - Sand",
+        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
+        "price": 70
+      },
+      "id": 10
+    },
+    {
+      "product": {
+        "id": 8,
+        "name": "High Waist Bikini Bottom - Sand",
+        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
+        "price": 70
+      },
+      "id": 11
+    },
+    {
+      "product": {
+        "id": 11,
+        "name": "Basic T-Shirt Box Logo - White",
+        "description": "Camiseta básica unisex en algodón peinado , con logo estampado en alta densidad en frente.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-01_720x.png?v=1613787089",
+        "price": 59
+      },
+      "id": 12
+    },
+    {
+      "product": {
+        "id": 10,
+        "name": "High Waist Bikini Bottom - Black",
+        "description": "Camiseta básica unisex en algodón peinado , con logo estampado en alta densidad en frente.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-black-1_720x.jpg?v=1607522271",
+        "price": 59
+      },
+      "id": 13
     }
   ],
   "posts": [
