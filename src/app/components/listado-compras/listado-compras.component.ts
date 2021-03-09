@@ -4,6 +4,7 @@ import { CartService } from 'src/app/services/cart.service';
 import { Cart } from 'src/app/models/cart';
 import {ListadoCompras} from 'src/app/models/listado-compras'
 import { MessengerService } from 'src/app/services/messenger.service'
+
 @Component({
   selector: 'app-listado-compras',
   templateUrl: './listado-compras.component.html',
@@ -12,9 +13,14 @@ import { MessengerService } from 'src/app/services/messenger.service'
 export class ListadoComprasComponent implements OnInit {
 
   cartItems = [];
-
+  itemsfechas = [];
+  total = 0;
+  tiempo = new Date();
+  fecha = this.tiempo.getDate()+'/'+(this.tiempo.getMonth())+'/'+(this.tiempo.getFullYear());
   cartTotal = 0
+  tempo = "7/03/2021";
   @Input() cartItem: any
+  @Input() botonfecha = document.querySelector(".btn");
 
   constructor(private msg: MessengerService,
     private cartService: CartService) { }
@@ -24,6 +30,7 @@ export class ListadoComprasComponent implements OnInit {
     const textoUsuario = document.querySelector(".textoUsuario");
     const logOut = document.querySelector(".contenedor__logOut");
     const verListado = document.querySelector(".contenedor__verListado");
+      
       if(usuario != null)
       {
       textoUsuario.textContent = usuario; 
@@ -37,6 +44,12 @@ export class ListadoComprasComponent implements OnInit {
     this.handleSubscription();
     this.loadCartItems();
     this.getAllEmployee();
+    this.calcCartTotal();
+    
+  
+    const tiempo = new Date();
+    const fecha =tiempo.getDate()+'/'+(tiempo.getMonth())+'/'+(tiempo.getFullYear());
+    //console.log(fecha);
   }
 
   handleSubscription() {
@@ -48,6 +61,22 @@ export class ListadoComprasComponent implements OnInit {
   loadCartItems() {
     this.cartService.getListadoItems().subscribe((items: ListadoCompras[]) => {
       this.cartItems = items;
+      this.cartItems.forEach(item =>{
+        this.total += item.qty;
+      })
+
+      this.cartItems.forEach(item =>{
+        if(this.tempo != item.date)
+        {
+          console.log("hola");
+          this.tempo = item.date;
+          this.itemsfechas.push(item);
+          console.log(item);
+        }
+        
+      })
+
+
       this.calcCartTotal();
     })
   }
@@ -68,6 +97,10 @@ export class ListadoComprasComponent implements OnInit {
       (data) => {
         this.getAllEmployee();
       });
+  }
+
+  verdetalle(){
+    this.cartService.disparador.emit();
   }
 
 }

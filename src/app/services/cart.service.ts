@@ -10,7 +10,7 @@ import {detalleUrl} from 'src/config/api';
 import { Product } from '../models/product';
 import { NgxSpinnerService } from "ngx-spinner";
 import { ToastrService } from 'ngx-toastr';
-
+import {EventEmitter, Output} from '@angular/core'
 
 const headerOption = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -24,7 +24,7 @@ export class CartService {
   mockUrl: string = 'http://localhost:3000/cart';
   mockListaUrl: string = 'http://localhost:3000/compras';
   mockDetalleUrl: string = 'http://localhost:3000/detalle-compra';
-
+  @Output() disparador: EventEmitter<any> = new EventEmitter();
 
   constructor(private http: HttpClient,
     private ngxSpinnerService: NgxSpinnerService) { }
@@ -48,7 +48,8 @@ export class CartService {
           if (!productExists) {
             const tiempo = new Date();
             const fecha =tiempo.getDate()+'/'+(tiempo.getMonth())+'/'+(tiempo.getFullYear());
-            cartItems.push(new Cart(item.id, item.product,1,fecha));
+            const usuario = document.querySelector(".textoUsuario");
+            cartItems.push(new Cart(item.id, item.product,1,fecha,usuario.textContent));
           }
         }
 
@@ -76,7 +77,8 @@ export class CartService {
           if (!productExists) {
             const tiempo = new Date();
             const fecha =tiempo.getDate()+'/'+(tiempo.getMonth())+'/'+(tiempo.getFullYear());
-            cartItems.push(new Cart(item.id, item.product,1,fecha));
+            const usuario = document.querySelector(".textoUsuario");
+            cartItems.push(new Cart(item.id, item.product,1,fecha,usuario.textContent));
           }
         }
 
@@ -96,6 +98,7 @@ export class CartService {
 
           for (let i in cartItems) {
             if (cartItems[i].productId === item.product.id) {
+
               cartItems[i].qty++
               productExists = true
               break;
@@ -105,7 +108,8 @@ export class CartService {
           if (!productExists) {
             const tiempo = new Date();
             const fecha =tiempo.getDate()+'/'+(tiempo.getMonth())+'/'+(tiempo.getFullYear());
-            cartItems.push(new Cart(item.id, item.product,1,fecha));
+            const usuario = document.querySelector(".textoUsuario");
+            cartItems.push(new Cart(item.id, item.product,1,fecha,usuario.textContent));
           }
         }
 

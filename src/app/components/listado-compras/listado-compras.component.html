@@ -2,23 +2,32 @@
 <table class="table table-hover">
     <thead>
         <tr>
-            <th scope="col" class="tamanio"></th>
-            <th scope="col" class="tamanio">Producto</th>
-            <th scope="col" class="tamanio">Precio</th>
-            <th scope="col" class="tamanio">Cantidad</th>
+            <th scope="col" class="tamanio">Cantidad Total</th> 
             <th scope="col" class="tamanio">Total</th>
+            <th scope="col" class="tamanio">fecha </th>
+            <th scope="col" class="tamanio">Detalle </th>
         </tr>
     </thead>
-    <tbody>
-        <tr *ngFor="let item of cartItems">
-            <td scope="row" class="imagen">
+    <tbody >
+        <tr *ngFor="let item of itemsfechas">
+            
+                
+            
+            <!--  <td scope="row" class="imagen">
                 <img [src]="item.productImage" width="60%" alt="">
+            </td>-->
+            <!-- <td scope="row" class="tamanioInfo" *ngIf ="item.date == fecha"> holaaa </td>-->
+             
+             <td scope="row" class="tamanioInfo itemCantidad" ng-options="item in cartItems group by item.date">{{total}}  </td>
+            <td scope="row" class="tamanioInfo itemCantidad" ng-options="item in cartItems group by item.date" >{{cartTotal | currency: 'USD'}}</td>
+            
+            <td scope="row" class="tamanioInfo" ng-options="item in cartItems group by item.date" >{{item.date}}</td>
+            <td scope="row" class="btn" >
+                <button type="button" [routerLink]="['/detalle-compra']" (click)="verdetalle(item.date)" id = "{{item.date}}"class="btn btn-sm btn-outline-secondary product-btn">Ver Detalles</button>
             </td>
-            <th scope="row" class="tamanioInfo">{{item.productName}}</th>
-            <td scope="row" class="tamanioInfo">{{item.price | currency:'USD'}}</td>
-            <td scope="row" class="tamanioInfo itemCantidad">{{item.qty}}</td>
-            <td scope="row" class="tamanioInfo">{{(item.qty * item.price) | currency:'USD'}}</td>
+            
         </tr>
+        
     </tbody> 
 </table>
 

@@ -7,8 +7,9 @@ export class DetalleCompra {
   qty: number;
   price: number;
   date: string;
+  usuario : string;
 
-  constructor(id: number, product: Product, qty = 1,date) {
+  constructor(id: number, product: Product, qty = 1,date, usuario) {
     this.id = id;
     this.productId = product.id;
     this.productName = product.name;
@@ -16,5 +17,6 @@ export class DetalleCompra {
     this.price = product.price;
     this.qty = qty;
     this.date = date;
+    this.usuario = usuario;
   }
 }

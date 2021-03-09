@@ -3,6 +3,8 @@ import { Product } from 'src/app/models/product';
 import { CartService } from 'src/app/services/cart.service';
 import { Cart } from 'src/app/models/cart';
 import { MessengerService } from 'src/app/services/messenger.service'
+import { ProductService } from 'src/app/services/product.service'
+
 
 @Component({
   selector: 'app-detalle-compra',
@@ -12,12 +14,15 @@ import { MessengerService } from 'src/app/services/messenger.service'
 export class DetalleCompraComponent implements OnInit {
 
   cartItems = [];
-
+  productList: Product[] = []
   cartTotal = 0
-  @Input() cartItem: any
+  @Input() cartItem: any;
+  @Input() fecha: string;
 
   constructor(private msg: MessengerService,
     private cartService: CartService) { }
+
+    
 
   ngOnInit(): void {
     this.handleSubscription();
@@ -31,6 +36,15 @@ export class DetalleCompraComponent implements OnInit {
         });
 
       }
+      this.cartService.disparador.subscribe(data => {
+        const fechaboton = data;
+        console.log(fechaboton);
+      })
+    const usuario = localStorage.getItem('usuario');
+    const textoUsuario = document.querySelector(".textoUsuario");
+
+    
+     
   }
 
   handleSubscription() {
