@@ -185,20 +185,6 @@
       "email": "estebancasas9817@gmail.com",
       "clave": "esteban",
       "id": 1
-    },
-    {
-      "nombre": "Juan",
-      "apellido": "Mendez",
-      "email": "juan@gmail.com",
-      "clave": "juan123",
-      "id": 2
-    },
-    {
-      "nombre": "Juliana",
-      "apellido": "Casas",
-      "email": "juliana@gmail.com",
-      "clave": "lola",
-      "id": 3
     }
   ],
   "compras": [
@@ -210,177 +196,7 @@
         "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-b-01_720x720.png?v=1613785193",
         "id": 9
       },
-      "id": 7
-    },
-    {
-      "product": {
-        "id": 8,
-        "name": "High Waist Bikini Bottom - Sand",
-        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
-        "price": 70
-      },
-      "id": 8
-    },
-    {
-      "product": {
-        "id": 8,
-        "name": "High Waist Bikini Bottom - Sand",
-        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
-        "price": 70
-      },
-      "id": 9
-    },
-    {
-      "product": {
-        "id": 8,
-        "name": "High Waist Bikini Bottom - Sand",
-        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
-        "price": 70
-      },
-      "id": 10
-    },
-    {
-      "product": {
-        "id": 8,
-        "name": "High Waist Bikini Bottom - Sand",
-        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
-        "price": 70
-      },
-      "id": 11
-    },
-    {
-      "product": {
-        "id": 11,
-        "name": "Basic T-Shirt Box Logo - White",
-        "description": "Camiseta básica unisex en algodón peinado , con logo estampado en alta densidad en frente.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-01_720x.png?v=1613787089",
-        "price": 59
-      },
-      "id": 12
-    },
-    {
-      "product": {
-        "id": 10,
-        "name": "High Waist Bikini Bottom - Black",
-        "description": "Camiseta básica unisex en algodón peinado , con logo estampado en alta densidad en frente.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-black-1_720x.jpg?v=1607522271",
-        "price": 59
-      },
-      "id": 13
-    },
-    {
-      "product": {
-        "name": "Basic T-Shirt - Black",
-        "description": "Basic T-Shirt - Military Green",
-        "price": 70,
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-b-01_720x720.png?v=1613785193",
-        "id": 9
-      },
-      "id": 14
-    },
-    {
-      "product": {
-        "id": 8,
-        "name": "High Waist Bikini Bottom - Sand",
-        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
-        "price": 70
-      },
-      "id": 15
-    },
-    {
-      "product": {
-        "name": "High Waist Bikini Bottom - Bone",
-        "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
-        "price": 70,
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-bone-1_720x.jpg?v=1607522293",
-        "id": 7
-      },
-      "id": 16
-    },
-    {
-      "product": {
-        "id": 11,
-        "name": "Basic T-Shirt Box Logo - White",
-        "description": "Camiseta básica unisex en algodón peinado , con logo estampado en alta densidad en frente.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-01_720x.png?v=1613787089",
-        "price": 59
-      },
-      "id": 17
-    },
-    {
-      "product": {
-        "id": 27,
-        "name": "Happy Socks - Pack x 3",
-        "description": "Medias en algodón con fondeado caras felices y logo (TRUE) en la planta del pie.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-happy-socks-pack-1_720x.jpg?v=1607985240",
-        "price": 59
-      },
-      "id": 18
-    },
-    {
-      "product": {
-        "id": 18,
-        "name": "Basic Hoodie - Red",
-        "description": "Buzo unisex con capucha en tela burda sin perchar de alto gramaje (100 % algodón) , rib en fajón y puños, estampado logo en alta densidad, cordón a tono en algodón y puntera metálica negra. Estampado logo bandera en manga.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-hoodie-red-1_720x.jpg?v=1613784156",
-        "price": 140
-      },
-      "id": 19
-    },
-    {
-      "product": {
-        "name": "Basic T-Shirt - Black",
-        "description": "Basic T-Shirt - Military Green",
-        "price": 70,
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-b-01_720x720.png?v=1613785193",
-        "id": 9
-      },
-      "id": 20
-    },
-    {
-      "product": {
-        "name": "True High Waisted Pants - Paisley",
-        "description": "Pantalón ancho en drill combinación camel y negro estampado, bolsillos en frente, marquilla exterior bordada frente lateral, bolsillos parche posterior, banderín a un lateral del bolsillo posterior , elástico ajustable con tanca metálica en bota.",
-        "price": 195,
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waisted-pants-paisley-1.jpg?v=1607985639",
-        "id": 3000
-      },
-      "id": 21
-    },
-    {
-      "product": {
-        "id": 25,
-        "name": "Classic Cap - Black",
-        "description": "Gorra en drill unisex con bordado en frente y correa ajustable en la parte trasera.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-cap-black_720x.jpg?v=1596721859",
-        "price": 55
-      },
-      "id": 22
-    },
-    {
-      "product": {
-        "id": 26,
-        "name": "Classic Cap- White",
-        "description": "Gorra en drill unisex con bordado en frente y correa ajustable en la parte trasera.",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-cap-white_3fef9de5-c7bf-4ca9-aba0-cf6b495bdfc4_720x.jpg?v=1596721923",
-        "price": 55
-      },
-      "id": 23
-    },
-    {
-      "product": {
-        "name": "Basic T-Shirt - Black",
-        "description": "Basic T-Shirt - Military Green",
-        "price": 70,
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-b-01_720x720.png?v=1613785193",
-        "id": 9
-      },
-      "id": 24
+      "id": 1
     }
   ],
   "posts": [
@@ -388,6 +204,13 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    }
+  ],
+  "admin": [
+    {
+      "usuario": "wilmer",
+      "correo": "wilmer@gmail.com",
+      "clave": "wilmer123"
     }
   ],
   "comments": [
