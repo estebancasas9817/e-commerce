@@ -5,7 +5,12 @@
             <th scope="col" class="tamanio">Cantidad Total</th> 
             <th scope="col" class="tamanio">Total</th>
             <th scope="col" class="tamanio">fecha </th>
+            <th scope="col" class="tamanio hidden hiddenImg"></th>
+            <th scope="col" class="tamanio hidden hiddenProd">Producto</th>
+            <th scope="col" class="tamanio hidden hiddenPrec">Precio</th>
+            <th scope="col" class="tamanio hidden hiddenCant">Cantidad</th>
             <th scope="col" class="tamanio">Detalle </th>
+
         </tr>
     </thead>
     <tbody >
@@ -22,8 +27,14 @@
             <td scope="row" class="tamanioInfo itemCantidad" ng-options="item in cartItems group by item.date" >{{cartTotal | currency: 'USD'}}</td>
             
             <td scope="row" class="tamanioInfo" ng-options="item in cartItems group by item.date" >{{item.date}}</td>
+            <td scope="row" class="imagen hidden hidden-4">
+                <img [src]="item.productImage" width="60%" alt="">
+            </td>
+            <th scope="row" class="tamanioInfo hidden hidden-1">{{item.productName}}</th>
+            <td scope="row" class="tamanioInfo hidden hidden-2">{{item.price | currency:'USD'}}</td>
+            <td scope="row" class="tamanioInfo itemCantidad hidden hidden-3">{{item.qty}}</td>
             <td scope="row" class="btn" >
-                <button type="button" [routerLink]="['/detalle-compra']" (click)="verdetalle(item.date)" id = "{{item.date}}"class="btn btn-sm btn-outline-secondary product-btn">Ver Detalles</button>
+                <button type="button"(click)="verdetalle(item.date)" id = "{{item.date}}"class="btn btnVer btn-sm btn-outline-secondary product-btn">Ver Detalles</button>
             </td>
             
         </tr>

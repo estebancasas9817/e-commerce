@@ -100,7 +100,31 @@ export class ListadoComprasComponent implements OnInit {
   }
 
   verdetalle(){
-    this.cartService.disparador.emit();
+    const hiddenImg = document.querySelector(".hiddenImg");
+    const hiddenProd = document.querySelector(".hiddenProd");
+    const hiddenPrec = document.querySelector(".hiddenPrec");
+    const hiddenCant = document.querySelector(".hiddenCant");
+    const hidden4 = document.querySelector(".hidden-4");
+    const hidden1 = document.querySelector(".hidden-1");
+    const hidden2 = document.querySelector(".hidden-2");
+    const hidden3 = document.querySelector(".hidden-3");
+    const btnVer = document.querySelector(".btnVer");
+
+    hiddenImg.classList.toggle("hidden");
+    hiddenProd.classList.toggle("hidden");
+    hiddenPrec.classList.toggle("hidden");
+    hiddenCant.classList.toggle("hidden");
+    hidden4.classList.toggle("hidden");
+    hidden1.classList.toggle("hidden");
+    hidden2.classList.toggle("hidden");
+    hidden3.classList.toggle("hidden");
+    if(hiddenImg.classList.contains("hidden")){
+      btnVer.textContent = "Ver Detalles";
+    }
+    else{
+      btnVer.textContent = "Ver Listado";
+
+    }
   }
 
 }

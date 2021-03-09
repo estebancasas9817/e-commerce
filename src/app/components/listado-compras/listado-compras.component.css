@@ -68,3 +68,11 @@ h1 {
 .total {
   margin-bottom: 1rem;
 }
+
+.hidden {
+  display: none;
+}
+
+.hola {
+  content: "holaaaa";
+}
