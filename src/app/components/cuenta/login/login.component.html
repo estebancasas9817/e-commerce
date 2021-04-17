@@ -2,11 +2,11 @@
     <form action="" class="contact__form"
      #loginForm="ngForm"
       (ngSubmit)="loginForm.valid && login()">
-        <input type="email" class="contact__name input" placeholder="Email" required
+        <input type="email" class="contact__nombre input" placeholder="Email" required
         [(ngModel)]="model.userEmail" 
         #userEmail="ngModel"
         id="userEmail"
-        name="userPassword">
+        nombre="userPassword">
         <label for="" 
         class="contact__label" 
         >Email</label>
@@ -17,7 +17,7 @@
            #userPassword="ngModel"
         [(ngModel)]="model.userPassword" 
         id="userPassword"
-        name="userPassword">
+        nombre="userPassword">
         <label for="" class="contact__label">Contraseña</label>
         <input type="submit" value="Iniciar Sesión" class="contact__enviar" >
     </form>

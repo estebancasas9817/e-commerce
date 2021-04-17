@@ -2,13 +2,13 @@
 <div class="row">
     <div class="col-md-5">
         <form action="" class="contact__form"
-      (ngSubmit)="crud()"
-      [formGroup]="registroForm">
+        #addproductform="ngForm" (ngSubmit)="addProductformsubmit()">
         <input type="text" 
-        class="contact__name input inputNombreProducto" 
+        class="contact__nombre input inputNombreProducto" 
         placeholder="Nombre del producto" 
         required
-        formControlName="name">
+        name="nombre"
+        [(ngModel)] = "producto.nombre">
         <label for="" 
         class="contact__label" 
         >Nombre Del producto</label>
@@ -17,7 +17,9 @@
          class=" input inputDescripcionProducto"
           placeholder="Descripcion del producto"
            required
-           formControlName="description">
+           name="descripcion"
+           [(ngModel)] = "producto.descripcion"
+           >
         <label for="" class="contact__label">Descripcion del producto</label>
 
 
@@ -25,7 +27,9 @@
          class=" input inputPrecioProducto"
           placeholder="Precio del producto"
            required
-           formControlName="price">
+           name="precio"
+           [(ngModel)] = "producto.precio"
+           >
         <label for="" class="contact__label">Precio del producto</label>
 
 
@@ -33,19 +37,22 @@
          class=" input inputIdProducto"
           placeholder="Id del producto"
            required
-           formControlName="id">
+           name="id"
+           [(ngModel)] = "producto.id"
+           >
         <label for="" class="contact__label">Id del producto</label>
 
         <input type="text"
          class=" input inputImagenProducto"
           placeholder="Imagen URL del producto"
            required
-           formControlName="imageUrl">
+           name="fotoss"
+           [(ngModel)] = "producto.fotos"
+           >
         <label for="" class="contact__label">Imagen URL del producto</label>
-        <a class="btnSubmit" type="submit"  class="contact__enviar"
-        (click) ="agregar()" href="/panel-admin">Agregar Producto</a>
-        <a type="submit"  class="btnSubmit" class="contact__enviar"
-        (click) ="editar()" href="/panel-admin">Editar Producto</a>
+        <button class="btnSubmit" type="submit"  class="contact__enviar" href="/panel-admin" >Agregar Producto</button>
+        <a type="submit"  class="btnSubmit" class="contact__enviar"(click) ="editar()"
+         >Editar Producto</a>
     </form>
     </div>
 
@@ -65,11 +72,11 @@
             <tbody>
                 <tr *ngFor="let item of productList">
                     <td scope="row" class="imagen" >
-                        <img [src]="item.imageUrl" width="60%" alt="">
+                        <img [src]="item.fotos" width="60%" alt="">
                     </td>
-                    <th scope="row" class="tamanioInfo">{{item.name}}</th>
-                    <td scope="row" class="tamanioInfo">{{item.price | currency:'USD'}}</td>
-                    <td scope="row" class="tamanioInfo itemCantidad">{{item.description}}</td>
+                    <th scope="row" class="tamanioInfo">{{item.nombre}}</th>
+                    <td scope="row" class="tamanioInfo">{{item.precio | currency:'USD'}}</td>
+                    <td scope="row" class="tamanioInfo itemCantidad">{{item.descripcion}}</td>
                     <td scope="row" class="tamanioInfo"> {{item.id}}</td>
                     <td>
                         <a class="btn" (click)="editProduct(item)">
@@ -78,7 +85,7 @@
                       </td>
 
                     <td>
-                        <a class="btn text-danger" (click)="eliminar(item)" href="/panel-admin">
+                        <a class="btn text-danger"(click)="eliminar(item)"  href="/panel-admin">
                           <i class="fa fa-trash"></i>
                         </a>
                       </td>

@@ -1,16 +1,16 @@
 export class Product {
     id: number;
-    name: string;
-    description: string;
-    price: number;
-    imageUrl: string;
-  
-    constructor(id, name, description, price , imageUrl ) {
-      this.id = id
-      this.name = name
-      this.description = description
-      this.price = price
-      this.imageUrl = imageUrl
-    }
+    descripcion: string;
+    fotos: string;
+    nombre: string;
+    precio: number;
+    // constructor(id:number,descripcion:string,fotos:string,nombre:string,precio:number){
+    //   this.id = id;
+    //   this.descripcion = descripcion;
+    //   this.fotos = fotos;
+    //   this.nombre = nombre;
+    //   this.precio = precio;
+    // }
+    
   }
   

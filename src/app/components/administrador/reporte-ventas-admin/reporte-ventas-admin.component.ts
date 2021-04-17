@@ -51,7 +51,7 @@ export class ReporteVentasAdminComponent implements OnInit {
   calcCartTotal() {
     this.cartTotal = 0
     this.cartItems.forEach(item => {
-      this.cartTotal += (item.qty * item.price)
+      this.cartTotal += (item.qty * item.precio)
     })
     const ganancia = document.querySelector(".ganancia");
     ganancia.textContent = this.cartTotal.toString()+ " USD";

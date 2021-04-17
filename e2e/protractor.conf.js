@@ -13,7 +13,7 @@ exports.config = {
     './src/**/*.e2e-spec.ts'
   ],
   capabilities: {
-    browserName: 'chrome'
+    browsernombre: 'chrome'
   },
   directConnect: true,
   SELENIUM_PROMISE_MANAGER: false,
@@ -26,7 +26,7 @@ exports.config = {
   },
   onPrepare() {
     require('ts-node').register({
-      project: require('path').join(__dirname, './tsconfig.json')
+      project: require('path').join(__dirnombre, './tsconfig.json')
     });
     jasmine.getEnv().addReporter(new SpecReporter({
       spec: {

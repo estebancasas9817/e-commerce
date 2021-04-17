@@ -4,9 +4,9 @@
       <a href="/productos"(click)="eliminarCarro(cartItem.id)">X</a></span>
   </div>
     <div class="contenedor">
-      <span>{{ cartItem.productName }}</span> <span>  x </span>
+      <span>{{ cartItem.productnombre }}</span> <span>  x </span>
     <span>{{ cartItem.qty }}</span>:
-    <strong>{{ (cartItem.qty * cartItem.price) | currency:'USD' }}</strong>
+    <strong>{{ (cartItem.qty * cartItem.precio) | currency:'USD' }}</strong>
     </div>
     
   </div>

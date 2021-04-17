@@ -14,10 +14,10 @@
             <td scope="row" class="imagen">
                 <img [src]="item.productImage" width="60%" alt="">
             </td>
-            <th scope="row" class="tamanioInfo">{{item.productName}}</th>
-            <td scope="row" class="tamanioInfo">{{item.price | currency:'USD'}}</td>
+            <th scope="row" class="tamanioInfo">{{item.productnombre}}</th>
+            <td scope="row" class="tamanioInfo">{{item.precio | currency:'USD'}}</td>
             <td scope="row" class="tamanioInfo itemCantidad">{{item.qty}}</td>
-            <td scope="row" class="tamanioInfo">{{(item.qty * item.price) | currency:'USD'}}</td>
+            <td scope="row" class="tamanioInfo">{{(item.qty * item.precio) | currency:'USD'}}</td>
         </tr>
     </tbody>
     

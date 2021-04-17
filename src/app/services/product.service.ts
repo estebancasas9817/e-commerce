@@ -18,66 +18,85 @@ const headerOption = {
 export class ProductService {
   
 
-  allProducts: Product[];
-  mockUrl: string = 'http://localhost:3000/products';
+  // allProducts: Product[];
+  // mockUrl: string = 'http://localhost:3000/products';
 
-  currentProduct: Product = {
-    name: '',
-    description: '',
-    price: null,
-    id: null,
-    imageUrl: ''
-  }  
-  constructor(
-    private http:HttpClient,
-    private ngxSpinnerService: NgxSpinnerService) { }
-
-  getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(apiUrl);
+  // currentProduct: Product = {
+  //   nombre: '',
+  //   descripcion: '',
+  //   precio: null,
+  //   id: null,
+  //   fotos: ''
+  // }  
+  constructor(private http:HttpClient) { }
+  recuperarListaProductoRemoto():Observable<any>{
+    return this.http.get<any>("http://localhost:10/getlistaproductos");
   }
 
-  createProduct(product: Product): Observable<Product> {
-    return this.http.post<Product>(this.mockUrl, product, headerOption);
+  agregarProductoRemoto(product: Product):Observable<any>{
+    return this.http.post<any>('http://localhost:10/crearproducto',product);
+
   }
 
-  updateProduct(product: Product): Observable<Product> {
-    return this.http.put<Product>(this.mockUrl + '/' + product.id, product, headerOption);
+  modificarProductoRemoto(product: Product): Observable<any>{
+    return this.http.post<any>('http://localhost:10/modificarproducto',product);
   }
 
-  getAllEmployee() {
-    this.ngxSpinnerService.show();
-    return this.http.get<Product[]>(this.mockUrl, headerOption).subscribe(
-      (data: Product[]) => {
-        this.allProducts = data;
-        console.table(this.allProducts);
-        setTimeout(() => {
-          this.ngxSpinnerService.hide();
-        }, 500);
-      });
+  recuperarListaProductoPorId(id: number): Observable<any> {
+    return this.http.get<any>('http://localhost:10/getlistaproductosporid/'+id);
+  }
+  eliminarProductoPorId(id: number): Observable<any> {
+    return this.http.delete<any>('http://localhost:10/eliminarproducto/' + id);
   }
 
-  deleteProduct(id: Number): Observable<Product> {
-    return this.http.delete<Product>(this.mockUrl + '/' + id, headerOption);
-  }
 
-  getProductItems(): Observable<Product[]> {
-    return this.http.get<Product[]>(apiUrl).pipe(
-      map((result: any[]) => {
-        let productItems: Product[] = [];
 
-        for (let item of result) {
-          let productExists = false
+  // getProducts(): Observable<Product[]> {
+  //   return this.http.get<Product[]>(apiUrl);
+  // }
 
-          for (let i in productItems) {
-            if (productItems[i].id === item.product.id) {
-              productExists = true
-              break;
-            }
-          }
-        }
+  // createProduct(product: Product): Observable<Product> {
+  //   return this.http.post<Product>(this.mockUrl, product, headerOption);
+  // }
 
-        return productItems;
-      })
-    );
-  }
+  // updateProduct(product: Product): Observable<Product> {
+  //   return this.http.put<Product>(this.mockUrl + '/' + product.id, product, headerOption);
+  // }
+
+  // getAllEmployee() {
+  //   this.ngxSpinnerService.show();
+  //   return this.http.get<Product[]>(this.mockUrl, headerOption).subscribe(
+  //     (data: Product[]) => {
+  //       this.allProducts = data;
+  //       console.table(this.allProducts);
+  //       setTimeout(() => {
+  //         this.ngxSpinnerService.hide();
+  //       }, 500);
+  //     });
+  // }
+
+  // deleteProduct(id: Number): Observable<Product> {
+  //   return this.http.delete<Product>(this.mockUrl + '/' + id, headerOption);
+  // }
+
+  // getProductItems(): Observable<Product[]> {
+  //   return this.http.get<Product[]>(apiUrl).pipe(
+  //     map((result: any[]) => {
+  //       let productItems: Product[] = [];
+
+  //       for (let item of result) {
+  //         let productExists = false
+
+  //         for (let i in productItems) {
+  //           if (productItems[i].id === item.product.id) {
+  //             productExists = true
+  //             break;
+  //           }
+  //         }
+  //       }
+
+  //       return productItems;
+  //     })
+  //   );
+  // }
 }

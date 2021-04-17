@@ -14,24 +14,24 @@ export class ProductListComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
-    this.productService.getProducts().subscribe(products =>{
-      this.productList = products;
-    const usuario = localStorage.getItem('usuario');
-    const textoUsuario = document.querySelector(".textoUsuario");
-    const logOut = document.querySelector(".contenedor__logOut");
-    const verListado = document.querySelector(".contenedor__verListado");
-      if(usuario != null)
-      {
-      textoUsuario.textContent = usuario; 
-      if(logOut.classList.contains("hidden") === true)
-      {
-        logOut.classList.toggle("hidden");
-        verListado.classList.toggle("hidden");
-      }
+    // this.productService.getProducts().subscribe(products =>{
+    //   this.productList = products;
+    // const usuario = localStorage.getItem('usuario');
+    // const textoUsuario = document.querySelector(".textoUsuario");
+    // const logOut = document.querySelector(".contenedor__logOut");
+    // const verListado = document.querySelector(".contenedor__verListado");
+    //   if(usuario != null)
+    //   {
+    //   textoUsuario.textContent = usuario; 
+    //   if(logOut.classList.contains("hidden") === true)
+    //   {
+    //     logOut.classList.toggle("hidden");
+    //     verListado.classList.toggle("hidden");
+    //   }
       
-      }
-      console.log(this.productList[0].name);
-    })
+    //   }
+    //   console.log(this.productList[0].nombre);
+    // })
   }
 
 }

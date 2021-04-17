@@ -30,8 +30,8 @@
             <td scope="row" class="imagen hidden hidden-4">
                 <img [src]="item.productImage" width="60%" alt="">
             </td>
-            <th scope="row" class="tamanioInfo hidden hidden-1">{{item.productName}}</th>
-            <td scope="row" class="tamanioInfo hidden hidden-2">{{item.price | currency:'USD'}}</td>
+            <th scope="row" class="tamanioInfo hidden hidden-1">{{item.productnombre}}</th>
+            <td scope="row" class="tamanioInfo hidden hidden-2">{{item.precio | currency:'USD'}}</td>
             <td scope="row" class="tamanioInfo itemCantidad hidden hidden-3">{{item.qty}}</td>
             <td scope="row" class="btn" >
                 <button type="button"(click)="verdetalle(item.date)" id = "{{item.date}}"class="btn btnVer btn-sm btn-outline-secondary product-btn">Ver Detalles</button>

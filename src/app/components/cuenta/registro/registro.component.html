@@ -4,11 +4,11 @@
     [formGroup]="registerForm">
 
         <input type="text" 
-        class="contact__name input" 
+        class="contact__nombre input" 
         placeholder="Nombre" 
         required 
         id="nombre"
-        formControlName="nombre">
+        formControlnombre="nombre">
         <label for="" class="contact__label">Nombre</label>
 
         <input type="text" 
@@ -16,21 +16,21 @@
          placeholder="Apellido" 
          required
         id="apellido"
-        formControlName="apellido">
+        formControlnombre="apellido">
         <label for="" class="contact__label">Apellido</label>
         <input type="email" 
         class="contact__email input" 
         placeholder="Email" 
         required
         id="email"
-        formControlName="email">
+        formControlnombre="email">
         <label for="" class="contact__label">Email</label>
         <input type="password" 
         class="contact__clave input" 
         placeholder="Contraseña" 
         required
         id="clave"
-        formControlName="clave">
+        formControlnombre="clave">
         <label for="" class="contact__label">Contraseña</label>
         <input type="submit"
         (click) ="agregarUser()" 

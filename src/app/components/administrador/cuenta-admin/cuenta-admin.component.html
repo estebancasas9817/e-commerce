@@ -3,11 +3,11 @@
      #loginForm="ngForm"
       (ngSubmit)="loginForm.valid && loginAdmin()">
 
-        <input type="text" class="contact__name input" placeholder="Usuario" required
-        [(ngModel)]="model.adminUsername" 
+        <input type="text" class="contact__nombre input" placeholder="Usuario" required
+        [(ngModel)]="model.adminUsernombre" 
         #adminEmail="ngModel"
-        id="adminUsername"
-        name="adminUsername">
+        id="adminUsernombre"
+        nombre="adminUsernombre">
         <label for="" 
         class="contact__label" 
         >Usuario</label>
@@ -15,7 +15,7 @@
         [(ngModel)]="model.adminEmail" 
         #userEmail="ngModel"
         id="adminEmail"
-        name="adminEmail">
+        nombre="adminEmail">
         <label for="" 
         class="contact__label" 
         >Email</label>
@@ -27,7 +27,7 @@
            #adminPassword="ngModel"
         [(ngModel)]="model.adminPassword" 
         id="adminPassword"
-        name="adminPassword">
+        nombre="adminPassword">
         <label for="" class="contact__label">Contraseña</label>
         <button  class="contact__enviar" (click)="loginAdmin()">Iniciar Sesion</button>
             

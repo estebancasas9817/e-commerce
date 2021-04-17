@@ -2,163 +2,163 @@
   "products": [
     {
       "id": 8,
-      "name": "High Waist Bikini Bottom - Sand",
-      "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
-      "price": 70
+      "nombre": "High Waist Bikini Bottom - Sand",
+      "descripcion": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-sand-1_720x.jpg?v=1607522335",
+      "precio": 70
     },
     {
-      "name": "Basic T-Shirt - Black",
-      "description": "Basic T-Shirt - Military Green",
-      "price": 70,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-b-01_720x720.png?v=1613785193",
+      "nombre": "Basic T-Shirt - Black",
+      "descripcion": "Basic T-Shirt - Military Green",
+      "precio": 70,
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-b-01_720x720.png?v=1613785193",
       "id": 9
     },
     {
       "id": 10,
-      "name": "High Waist Bikini Bottom - Black",
-      "description": "Camiseta básica unisex en algodón peinado , con logo estampado en alta densidad en frente.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-black-1_720x.jpg?v=1607522271",
-      "price": 59
+      "nombre": "High Waist Bikini Bottom - Black",
+      "descripcion": "Camiseta básica unisex en algodón peinado , con logo estampado en alta densidad en frente.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-black-1_720x.jpg?v=1607522271",
+      "precio": 59
     },
     {
       "id": 11,
-      "name": "Basic T-Shirt Box Logo - White",
-      "description": "Camiseta básica unisex en algodón peinado , con logo estampado en alta densidad en frente.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-01_720x.png?v=1613787089",
-      "price": 59
+      "nombre": "Basic T-Shirt Box Logo - White",
+      "descripcion": "Camiseta básica unisex en algodón peinado , con logo estampado en alta densidad en frente.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/Basic-T-shirt-01_720x.png?v=1613787089",
+      "precio": 59
     },
     {
       "id": 13,
-      "name": "Basic T-Shirt - Mustard",
-      "description": "Camiseta básica unisex en algodón(100%) peinado , con logo estampado en alta densidad en frente, banderín logo costado.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-tshirt-mustard-1_720x.jpg?v=1613827194",
-      "price": 59
+      "nombre": "Basic T-Shirt - Mustard",
+      "descripcion": "Camiseta básica unisex en algodón(100%) peinado , con logo estampado en alta densidad en frente, banderín logo costado.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-tshirt-mustard-1_720x.jpg?v=1613827194",
+      "precio": 59
     },
     {
       "id": 14,
-      "name": "Basic T-Shirt - Red Wine",
-      "description": "Camiseta básica unisex en algodón(100%) peinado , con logo estampado en alta densidad en frente, banderín logo costado.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-tshirt-red-wine-1_720x.jpg?v=1613827213",
-      "price": 59
+      "nombre": "Basic T-Shirt - Red Wine",
+      "descripcion": "Camiseta básica unisex en algodón(100%) peinado , con logo estampado en alta densidad en frente, banderín logo costado.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-tshirt-red-wine-1_720x.jpg?v=1613827213",
+      "precio": 59
     },
     {
       "id": 15,
-      "name": "Comfort Cargo Pants - Navy Blue",
-      "description": "Pantalón en tela micro comfort rígida sin lycra, (90% poliéster - 10% nylon) textura durazno por fuera y textura sedosa por dentro. Bolsillos en frente y en posterior, elástico en pretina y botas, estampado de logo en bolsillo izquierdo.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-confort-pants-blue-1_720x.jpg?v=1614292387",
-      "price": 105
+      "nombre": "Comfort Cargo Pants - Navy Blue",
+      "descripcion": "Pantalón en tela micro comfort rígida sin lycra, (90% poliéster - 10% nylon) textura durazno por fuera y textura sedosa por dentro. Bolsillos en frente y en posterior, elástico en pretina y botas, estampado de logo en bolsillo izquierdo.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-confort-pants-blue-1_720x.jpg?v=1614292387",
+      "precio": 105
     },
     {
       "id": 16,
-      "name": " Comfort Cargo Pants - Camel",
-      "description": "Pantalón en tela micro comfort rígida sin lycra, (90% poliéster - 10% nylon) textura durazno por fuera y textura sedosa por dentro. Bolsillos en frente y en posterior, elástico en pretina y botas, estampado de logo en bolsillo izquierdo.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-confort-pants-camel-1_720x.jpg?v=1614292170",
-      "price": 105
+      "nombre": " Comfort Cargo Pants - Camel",
+      "descripcion": "Pantalón en tela micro comfort rígida sin lycra, (90% poliéster - 10% nylon) textura durazno por fuera y textura sedosa por dentro. Bolsillos en frente y en posterior, elástico en pretina y botas, estampado de logo en bolsillo izquierdo.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-confort-pants-camel-1_720x.jpg?v=1614292170",
+      "precio": 105
     },
     {
       "id": 17,
-      "name": "Comfort Cargo Pants - Military Green",
-      "description": "Pantalón en tela micro comfort rígida sin lycra, (90% poliéster - 10% nylon) textura durazno por fuera y textura sedosa por dentro. Bolsillos en frente y en posterior, elástico en pretina y botas, estampado de logo en bolsillo izquierdo.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-confort-pants-soft-green-1_720x.jpg?v=1614292317",
-      "price": 105
+      "nombre": "Comfort Cargo Pants - Military Green",
+      "descripcion": "Pantalón en tela micro comfort rígida sin lycra, (90% poliéster - 10% nylon) textura durazno por fuera y textura sedosa por dentro. Bolsillos en frente y en posterior, elástico en pretina y botas, estampado de logo en bolsillo izquierdo.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-confort-pants-soft-green-1_720x.jpg?v=1614292317",
+      "precio": 105
     },
     {
       "id": 18,
-      "name": "Basic Hoodie - Red",
-      "description": "Buzo unisex con capucha en tela burda sin perchar de alto gramaje (100 % algodón) , rib en fajón y puños, estampado logo en alta densidad, cordón a tono en algodón y puntera metálica negra. Estampado logo bandera en manga.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-hoodie-red-1_720x.jpg?v=1613784156",
-      "price": 140
+      "nombre": "Basic Hoodie - Red",
+      "descripcion": "Buzo unisex con capucha en tela burda sin perchar de alto gramaje (100 % algodón) , rib en fajón y puños, estampado logo en alta densidad, cordón a tono en algodón y puntera metálica negra. Estampado logo bandera en manga.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-hoodie-red-1_720x.jpg?v=1613784156",
+      "precio": 140
     },
     {
       "id": 19,
-      "name": "Basic Hoodie - Yellow",
-      "description": "Buzo unisex con capucha en tela burda sin perchar de alto gramaje (100 % algodón) , rib en fajón y puños, estampado logo en alta densidad, cordón a tono en algodón y puntera metálica negra. Estampado logo bandera en manga.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-hoodie-yellow-1_720x.jpg?v=1610663156",
-      "price": 140
+      "nombre": "Basic Hoodie - Yellow",
+      "descripcion": "Buzo unisex con capucha en tela burda sin perchar de alto gramaje (100 % algodón) , rib en fajón y puños, estampado logo en alta densidad, cordón a tono en algodón y puntera metálica negra. Estampado logo bandera en manga.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-basic-hoodie-yellow-1_720x.jpg?v=1610663156",
+      "precio": 140
     },
     {
       "id": 20,
-      "name": "High Waist Bikini Bottom - Black",
-      "description": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-black-1_720x.jpg?v=1607522271",
-      "price": 140
+      "nombre": "High Waist Bikini Bottom - Black",
+      "descripcion": "Bikini panty alto, en lycra (84% poliamida , 16% elastano) logo estampado en vinilo textil.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waist-bikini-bottom-black-1_720x.jpg?v=1607522271",
+      "precio": 140
     },
     {
       "id": 21,
-      "name": "Medellín Hoodie",
-      "description": "Buzo unisex con capucha en tela burda sin perchar de alto gramaje (100 % algodón) , rib en fajón y puños, estampado logo y bandera en alta densidad. Cordón negro en algodón y puntera metálica negra. Marquilla exterior tejida en manga.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-medellin-hoodie-1_720x.png?v=1607352985",
-      "price": 140
+      "nombre": "Medellín Hoodie",
+      "descripcion": "Buzo unisex con capucha en tela burda sin perchar de alto gramaje (100 % algodón) , rib en fajón y puños, estampado logo y bandera en alta densidad. Cordón negro en algodón y puntera metálica negra. Marquilla exterior tejida en manga.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-medellin-hoodie-1_720x.png?v=1607352985",
+      "precio": 140
     },
     {
       "id": 22,
-      "name": "Retro Top Box Logo - White",
-      "description": "Top escote profundo en lycra poliéster ( 80% poliéster- 20% lycra ), estampado en vinilo textil  en frente.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/RETRO_TOP_BOX_LOGO_WHITE_2_720x.jpg?v=1612973836",
-      "price": 70
+      "nombre": "Retro Top Box Logo - White",
+      "descripcion": "Top escote profundo en lycra poliéster ( 80% poliéster- 20% lycra ), estampado en vinilo textil  en frente.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/RETRO_TOP_BOX_LOGO_WHITE_2_720x.jpg?v=1612973836",
+      "precio": 70
     },
     {
       "id": 23,
-      "name": "Retro Top - Military Green",
-      "description": "Top escote profundo en lycra poliéster ( 80% poliéster- 20% lycra ), estampado en vinilo textil  en frente.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-retro-top-military-green-3_720x.jpg?v=1613429393",
-      "price": 70
+      "nombre": "Retro Top - Military Green",
+      "descripcion": "Top escote profundo en lycra poliéster ( 80% poliéster- 20% lycra ), estampado en vinilo textil  en frente.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-retro-top-military-green-3_720x.jpg?v=1613429393",
+      "precio": 70
     },
     {
       "id": 24,
-      "name": "Retro Top - Olive",
-      "description": "Top escote profundo en lycra poliéster ( 80% poliéster- 20% lycra ), estampado en vinilo textil  en frente.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/image_7e668e69-5cfc-48d5-89ff-b3b9df0a5bc6_720x.jpg?v=1592224006",
-      "price": 70
+      "nombre": "Retro Top - Olive",
+      "descripcion": "Top escote profundo en lycra poliéster ( 80% poliéster- 20% lycra ), estampado en vinilo textil  en frente.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/image_7e668e69-5cfc-48d5-89ff-b3b9df0a5bc6_720x.jpg?v=1592224006",
+      "precio": 70
     },
     {
       "id": 25,
-      "name": "Classic Cap - Black",
-      "description": "Gorra en drill unisex con bordado en frente y correa ajustable en la parte trasera.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-cap-black_720x.jpg?v=1596721859",
-      "price": 55
+      "nombre": "Classic Cap - Black",
+      "descripcion": "Gorra en drill unisex con bordado en frente y correa ajustable en la parte trasera.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-cap-black_720x.jpg?v=1596721859",
+      "precio": 55
     },
     {
       "id": 26,
-      "name": "Classic Cap- White",
-      "description": "Gorra en drill unisex con bordado en frente y correa ajustable en la parte trasera.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-cap-white_3fef9de5-c7bf-4ca9-aba0-cf6b495bdfc4_720x.jpg?v=1596721923",
-      "price": 55
+      "nombre": "Classic Cap- White",
+      "descripcion": "Gorra en drill unisex con bordado en frente y correa ajustable en la parte trasera.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-cap-white_3fef9de5-c7bf-4ca9-aba0-cf6b495bdfc4_720x.jpg?v=1596721923",
+      "precio": 55
     },
     {
       "id": 27,
-      "name": "Happy Socks - Pack x 3",
-      "description": "Medias en algodón con fondeado caras felices y logo (TRUE) en la planta del pie.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-happy-socks-pack-1_720x.jpg?v=1607985240",
-      "price": 59
+      "nombre": "Happy Socks - Pack x 3",
+      "descripcion": "Medias en algodón con fondeado caras felices y logo (TRUE) en la planta del pie.",
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-happy-socks-pack-1_720x.jpg?v=1607985240",
+      "precio": 59
     },
     {
-      "name": "True Classic Bucket Hat - Kiwi",
-      "description": "Gorro pescador en drill, unisex, con bordado en frente y forro interno",
-      "price": 60,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-bucket-hat-kiwi-1.jpg?v=1604510318",
+      "nombre": "True Classic Bucket Hat - Kiwi",
+      "descripcion": "Gorro pescador en drill, unisex, con bordado en frente y forro interno",
+      "precio": 60,
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-classic-bucket-hat-kiwi-1.jpg?v=1604510318",
       "id": 28
     },
     {
-      "name": "True Bikini Top - Leopard",
-      "description": "Bikini triangulo en lycra( 84% poliamida, 16% elastano) con elástico base marcado (TRUE) logo estampado en vinilo textil con cargadera elástica.",
-      "price": 80,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1.jpg?v=1607521639",
+      "nombre": "True Bikini Top - Leopard",
+      "descripcion": "Bikini triangulo en lycra( 84% poliamida, 16% elastano) con elástico base marcado (TRUE) logo estampado en vinilo textil con cargadera elástica.",
+      "precio": 80,
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bikini-top-leopard-1.jpg?v=1607521639",
       "id": 2
     },
     {
-      "name": "True High Waisted Pants - Paisley",
-      "description": "Pantalón ancho en drill combinación camel y negro estampado, bolsillos en frente, marquilla exterior bordada frente lateral, bolsillos parche posterior, banderín a un lateral del bolsillo posterior , elástico ajustable con tanca metálica en bota.",
-      "price": 195,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waisted-pants-paisley-1.jpg?v=1607985639",
+      "nombre": "True High Waisted Pants - Paisley",
+      "descripcion": "Pantalón ancho en drill combinación camel y negro estampado, bolsillos en frente, marquilla exterior bordada frente lateral, bolsillos parche posterior, banderín a un lateral del bolsillo posterior , elástico ajustable con tanca metálica en bota.",
+      "precio": 195,
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-high-waisted-pants-paisley-1.jpg?v=1607985639",
       "id": 3000
     },
     {
-      "name": "True Bob Overall - Light Blue",
-      "description": "Overall en denim cielo con silueta ancha, bolsillos frente , marquilla exterior (TRUE) bordada frente , bolsillos parche posterior, banderín a un lateral del bolsillo posterior , elástico ajustable con tanca metálica en bota, con costuras resaltantes a contraste en blanco, pasador a un lateral",
-      "price": 210,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bob-overall-light-blue-1.jpg?v=1607984886",
+      "nombre": "True Bob Overall - Light Blue",
+      "descripcion": "Overall en denim cielo con silueta ancha, bolsillos frente , marquilla exterior (TRUE) bordada frente , bolsillos parche posterior, banderín a un lateral del bolsillo posterior , elástico ajustable con tanca metálica en bota, con costuras resaltantes a contraste en blanco, pasador a un lateral",
+      "precio": 210,
+      "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bob-overall-light-blue-1.jpg?v=1607984886",
       "id": 900
     }
   ],
@@ -198,6 +198,6 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "nombre": "typicode"
   }
 }
