@@ -28,8 +28,7 @@ export class CrudAdminComponent implements OnInit {
 
   ngOnInit(): void {
     
-    // this.productService.getProducts().subscribe(products =>{
-    //   this.productList = products;
+    
 
     this.productService.recuperarListaProductoRemoto().subscribe(
       data=>{
@@ -75,10 +74,14 @@ export class CrudAdminComponent implements OnInit {
     console.log(this.productoEditar);
     console.log(this.productoEditar.nombre);
 
-    this.productService.modificarProductoRemoto(this.productoEditar).subscribe(
+    this.productService.modificarProductoRemoto(this.productoEditar).subscribe
+    (
       data =>{
         console.log("Producto modificado correctamente....");
         
+      },
+      error =>{
+        console.log(error);
       }
     )
     
