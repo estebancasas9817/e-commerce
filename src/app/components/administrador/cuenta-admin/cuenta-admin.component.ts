@@ -17,21 +17,32 @@ export class CuentaAdminComponent implements OnInit {
 
   loginAdmin(){
     const textoAdmin = document.querySelector(".textoAdmin");
-    this.adminService.getAdmin().subscribe(admin =>{
-      this.listaAdmin = admin;
-      for(let i in this.listaAdmin){
+    const clave1 = parseInt(this.model.adminPassword);
+    const correo = this.model.adminEmail;
+    const usuario = this.model.adminUsernombre;
+    let bandera,bandera2,bandera3;
+    
+    this.adminService.getAdminPorId(clave1).subscribe(
+      admin =>{
+        this.adminService.getAdminPorCorreo(correo).subscribe(
+          data=>{
+            
+            data === null ? location.href = "cuenta-admin": bandera = true;
+            
+            this.adminService.getAdminPorNombre(usuario).subscribe(
+              userName=>{
+                userName === null ? location.href = "cuenta-admin":location.href = "panel-admin";
         
-        if(this.listaAdmin[i].usuario === this.model.adminUsernombre && this.listaAdmin[i].correo === this.model.adminEmail && this.listaAdmin[i].clave === this.model.adminPassword) {
-          textoAdmin.textContent = this.listaAdmin[i].usuario;
-
-          location.href = "panel-admin";
-        }
-        else{
-          location.href = "cuenta-admin";
-          
-        }
-      }
-    }) 
+                
+              }
+            )
+          }
+        )
+    },
+    error=>{
+      location.href = "cuenta-admin";
+    }
+    ) 
   }
 
 }

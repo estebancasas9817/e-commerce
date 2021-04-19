@@ -1,36 +1,33 @@
 <h2 class="cliente">Soy nuevo</h2>
     <form action="" class="contact__form"
     (ngSubmit)="register()"
-    [formGroup]="registerForm">
+    #addusuarioform="ngForm">
 
         <input type="text" 
         class="contact__nombre input" 
-        placeholder="Nombre" 
+        placeholder="Usuario" 
         required 
         id="nombre"
-        formControlnombre="nombre">
-        <label for="" class="contact__label">Nombre</label>
+        name="nombreUsuario"
+        [(ngModel)] = "usuarios.nombreUsuario">
+        <label for="" class="contact__label">Usuario</label>
 
-        <input type="text" 
-        class="contact__apellido input"
-         placeholder="Apellido" 
-         required
-        id="apellido"
-        formControlnombre="apellido">
-        <label for="" class="contact__label">Apellido</label>
+        
         <input type="email" 
         class="contact__email input" 
         placeholder="Email" 
         required
         id="email"
-        formControlnombre="email">
+        name="email"
+        [(ngModel)] = "usuarios.email">
         <label for="" class="contact__label">Email</label>
         <input type="password" 
         class="contact__clave input" 
         placeholder="Contraseña" 
         required
         id="clave"
-        formControlnombre="clave">
+        name="clave"
+        [(ngModel)] = "usuarios.clave">
         <label for="" class="contact__label">Contraseña</label>
         <input type="submit"
         (click) ="agregarUser()" 

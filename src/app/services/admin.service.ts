@@ -11,7 +11,17 @@ export class AdminService {
 
   constructor(private http: HttpClient) { }
 
-  getAdmin(): Observable<Admin[]> {
-    return this.http.get<Admin[]>(apiUrl);
+  getAdminPorId(id: number): Observable<any> {
+    // console.log(this.http.get<any>('http://localhost:10/getadminporid/'+id));
+    return this.http.get<any>('http://localhost:10/getadminporid/'+id);
+  }
+
+  getAdminPorNombre(nombre: String): Observable<any> {
+    
+    return this.http.get<any>('http://localhost:10/getadminporusuario/'+nombre);
+  }
+
+  getAdminPorCorreo(correo: String): Observable<any> {
+    return this.http.get<any>('http://localhost:10/getadminporemail/'+correo);
   }
 }

@@ -7,6 +7,7 @@
         [(ngModel)]="model.adminUsernombre" 
         #adminEmail="ngModel"
         id="adminUsernombre"
+        name="adminUsernombre"
         nombre="adminUsernombre">
         <label for="" 
         class="contact__label" 
@@ -15,15 +16,18 @@
         [(ngModel)]="model.adminEmail" 
         #userEmail="ngModel"
         id="adminEmail"
+        name="adminEmail"
         nombre="adminEmail">
         <label for="" 
         class="contact__label" 
         >Email</label>
 
-        <input type="password"
+        <input type="number"
          class=" input"
+         name="adminPassword"
           placeholder="Contraseña"
            required
+        
            #adminPassword="ngModel"
         [(ngModel)]="model.adminPassword" 
         id="adminPassword"

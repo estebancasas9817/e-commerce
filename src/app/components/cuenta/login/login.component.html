@@ -2,18 +2,20 @@
     <form action="" class="contact__form"
      #loginForm="ngForm"
       (ngSubmit)="loginForm.valid && login()">
-        <input type="email" class="contact__nombre input" placeholder="Email" required
-        [(ngModel)]="model.userEmail" 
+        <input type="email" class="contact__nombre input" placeholder="Usuario" required
+        [(ngModel)]="model.userNombre" 
+        name="userNombre"
         #userEmail="ngModel"
         id="userEmail"
         nombre="userPassword">
         <label for="" 
         class="contact__label" 
-        >Email</label>
+        >Usuario</label>
         <input type="password"
          class=" input"
           placeholder="Contraseña"
            required
+           name="userPassword"
            #userPassword="ngModel"
         [(ngModel)]="model.userPassword" 
         id="userPassword"

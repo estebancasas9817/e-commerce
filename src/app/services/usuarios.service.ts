@@ -15,11 +15,30 @@ export class UsuariosService {
 
   constructor(private http: HttpClient) { }
 
-  agregarUsuarios(usuario: Usuarios): Observable<Usuarios> {
-    return this.http.post<Usuarios>(this.mockUrl, usuario, headerOption);
+  // agregarUsuarios(usuario: Usuarios): Observable<Usuarios> {
+  //   return this.http.post<Usuarios>(this.mockUrl, usuario, headerOption);
+  // }
+
+  agregarUsuario(usuario: Usuarios):Observable<any>{
+    return this.http.post<any>('http://localhost:10/crearusuario',usuario);
+
   }
 
-  getUsuarios(): Observable<Usuarios[]> {
-    return this.http.get<Usuarios[]>(apiUrl);
+  recuperarUsuario(id:number):Observable<any>{
+    return this.http.get<any>("http://localhost:10/getusuarioporid"+id);
+  }
+
+  
+
+  getUsuarioPorEmail(email:String): Observable<any[]> {
+    return this.http.get<any>("http://localhost:10/getusuarioporemail/"+email);
+  }
+
+  getUsuarioPorNombre(nombre:String): Observable<any[]> {
+    return this.http.get<any>("http://localhost:10/getusuariopornombre/"+nombre);
+  }
+
+  getUsuarioPorClave(clave:String): Observable<any[]> {
+    return this.http.get<any>("http://localhost:10/getusuarioporclave/"+clave);
   }
 }
