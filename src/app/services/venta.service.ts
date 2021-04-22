@@ -15,7 +15,7 @@ export class VentaService {
   }
 
   getTotalVentas():Observable<any> {
-    return this.http.get<any>("http://localhost:10/probando")
+    return this.http.get<any>("http://localhost:10/gettotalventa")
   }
 
   getAllVentas():Observable<any> {
