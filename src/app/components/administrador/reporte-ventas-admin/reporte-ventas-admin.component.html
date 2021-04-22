@@ -17,7 +17,7 @@
                 </div>
                 <div class="contenedor" >
                     <h4 class="texto-cajas">Ganacia Total</h4>
-                    <span class="numero-total ganancia"></span>
+                    <span class="numero-total ganancia"> 500.988</span>
                 </div>
                 
             </div>
@@ -40,20 +40,20 @@
                 <th scope="col" class="tamanio"></th>
                 <th scope="col" class="tamanio">Producto</th>
                 <th scope="col" class="tamanio">ID</th>
-                <th scope="col" class="tamanio">Fecha</th>
+                <th scope="col" class="tamanio">Precio</th>
                 <th scope="col" class="tamanio">Cantidad</th>
 
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let item of cartItems">
+            <tr *ngFor="let item of productList">
                 <td scope="row" class="imagen" >
-                    <img [src]="item.productImage" width="100%" alt="">
+                    <img [src]="item.foto" width="100%" alt="">
                 </td>
-                <th scope="row" class="tamanioInfo">{{item.productnombre}}</th>
-                <td scope="row" class="tamanioInfo">{{item.productId}}</td>
-                <td scope="row" class="tamanioInfo itemCantidad">{{item.date}}</td>
-                <td scope="row" class="tamanioInfo itemCantidad">{{item.qty}}</td>
+                <th scope="row" class="tamanioInfo">{{item.nombreItem}}</th>
+                <td scope="row" class="tamanioInfo">{{item.itemId}}</td>
+                <td scope="row" class="tamanioInfo">{{item.precioTotal | currency:'USD'}}</td>
+                <td scope="row" class="tamanioInfo itemCantidad">{{item.cantidadVendida}}</td>
                 
                 
             </tr>

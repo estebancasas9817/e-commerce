@@ -21,6 +21,8 @@ export class CuentaAdminComponent implements OnInit {
     const correo = this.model.adminEmail;
     const usuario = this.model.adminUsernombre;
     let bandera,bandera2,bandera3;
+
+    
     
     this.adminService.getAdminPorId(clave1).subscribe(
       admin =>{

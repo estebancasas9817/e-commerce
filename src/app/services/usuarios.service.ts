@@ -41,4 +41,9 @@ export class UsuariosService {
   getUsuarioPorClave(clave:String): Observable<any[]> {
     return this.http.get<any>("http://localhost:10/getusuarioporclave/"+clave);
   }
+
+
+  getCantidadUsuarios():Observable<any> {
+    return this.http.get<any>("http://localhost:10/getcantidadusuarios")
+  }
 }
