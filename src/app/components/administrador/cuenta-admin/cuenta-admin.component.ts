@@ -26,8 +26,10 @@ export class CuentaAdminComponent implements OnInit {
     
     this.adminService.getAdminPorId(clave1).subscribe(
       admin =>{
+        console.log(admin);
         this.adminService.getAdminPorCorreo(correo).subscribe(
           data=>{
+            console.log(data);
             
             data === null ? location.href = "cuenta-admin": bandera = true;
             

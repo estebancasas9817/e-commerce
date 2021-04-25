@@ -24,9 +24,7 @@ export class ProductItemComponent implements OnInit {
   }
 
   handleAddToCart() {
-    const tiempo = new Date();
-    const date =tiempo.getDate()+'/'+(tiempo.getMonth())+'/'+(tiempo.getFullYear());
-    this.productItem
+    // this.productItem
     this.cartService.addProductToCart(this.productItem).subscribe(() => {
       this.msg.sendMsg(this.productItem)
     })
