@@ -1,9 +1,9 @@
 <div class="colorNegro"> </div>
-<div class="row" *ngIf="cartItems.length === 0">>
+<div class="row" *ngIf="cantItems === 0">>
     <div class="col-md-4 offset-md-4">
         <div class="card">
             <div class="card-header">
-                <h3>No hay productos en el carrito.</h3>
+                <h3>productos en el carrito.</h3>
             </div>
             <div class="card-body">
                 <p>Antes de proceder al pago, debe agregar algunos productos a su carrito de compras.</p>
@@ -14,38 +14,33 @@
         </div>
     </div>
 </div>
-<table class="table table-hover" *ngIf="cartItems.length > 0">
+<table class="table table-hover" *ngIf="cantItems > 0">
     <thead>
         <tr>
             <th scope="col" class="tamanio"></th>
             <th scope="col" class="tamanio">Producto</th>
             <th scope="col" class="tamanio">Precio</th>
             <th scope="col" class="tamanio">Cantidad</th>
-            <th scope="col" class="tamanio">Total</th>
-            <th scope="col" class="tamanio">Fecha</th>
             <th scope="col" class="tamanio">Eliminar</th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let item of cartItems">
+        <tr *ngFor="let item of productosCarrito">
             <td scope="row" class="imagen">
-                <img [src]="item.productImage" width="60%" alt="">
+                <img [src]="item.fotos" width="60%" alt="">
             </td>
-            <th scope="row" class="tamanioInfo">{{item.productnombre}}</th>
+            <th scope="row" class="tamanioInfo">{{item.nombre}}</th>
             <td scope="row" class="tamanioInfo">{{item.precio | currency:'USD'}}</td>
-            <td scope="row" class="tamanioInfo itemCantidad">{{item.qty}}</td>
-            <td scope="row" class="tamanioInfo">{{(item.qty * item.precio) | currency:'USD'}}</td>
-            <td scope="row" class="tamanioInfo itemCantidad">{{item.date}}</td>
-
+            <td scope="row" class="tamanioInfo itemCantidad">1</td>
             <td scope="row" class="tamanioInfo">
-                <a href="/verCarro" (click)="eliminarCarro(item.id)" class="btnEliminar">X</a></td>
+                <button (click)="eliminarCarro(item)" class="btnEliminar">X</button></td>
         </tr>
     </tbody>
     
 </table>
 
-<div class="contenedor" *ngIf="cartItems.length > 0">
-    <h2 class="total">Total: {{cartTotal | currency: 'USD'}}</h2>
+<div class="contenedor" *ngIf="cantItems > 0">
+    <h2 class="total">Total: {{totalCarrito | currency: 'USD'}}</h2>
     <a [routerLink]="['/pagar']" class="btnPagar">Ir a pagar</a>
     
 </div>

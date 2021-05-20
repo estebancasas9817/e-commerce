@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MessengerService } from 'src/app/services/messenger.service'
 import { Product } from 'src/app/models/product';
-import { CartService } from 'src/app/services/cart.service';
+// import { CartService } from 'src/app/services/cart.service';
 import { Cart } from 'src/app/models/cart';
+import {CarritoService} from 'src/app/services/carrito.service';
 import { ToastrService } from 'ngx-toastr';
 
 
@@ -16,48 +17,38 @@ export class CartComponent implements OnInit {
   cartItems = [];
 
   cartTotal = 0
+  public productosCarrito: Product[] = [];
+  public cantItems:number;
+  public totalCarrito: number;
 
   constructor(
     private msg: MessengerService,
-    private cartService: CartService,
+    private carritoService: CarritoService,
     private toastrService: ToastrService
   ) { }
 
   ngOnInit() {
-    this.handleSubscription();
-    this.loadCartItems();
-    this.getAllEmployee();
+    // console.log("cccc");
+    // this.mostrarCarro();
+
   }
 
-  getAllEmployee() {
-    this.cartService.getAllEmployee();
+  mostrarCarro(){
+    console.log("sdsdsdsd");
+    this.productosCarrito=this.carritoService.getProductosCarrito();
+    
+    
+    this.cantItems=this.productosCarrito.length;
+    if(this.cantItems !=0){
+    let j = 0;
+    for(let i=0;i<this.productosCarrito.length;i++){
+      j= j+ Number (this.productosCarrito[i].precio);
+    }
+    this.totalCarrito = j;
+    }
   }
 
-  handleSubscription() {
-    this.msg.getMsg().subscribe((product: Product) => {
-      this.loadCartItems();
-    })
-  }
-
-  loadCartItems() {
-    this.cartService.getCartItems().subscribe((items: Cart[]) => {
-      this.cartItems = items;
-      this.calcCartTotal();
-    })
-  }
-
-  calcCartTotal() {
-    this.cartTotal = 0
-    this.cartItems.forEach(item => {
-      this.cartTotal += (item.qty * item.precio)
-    })
-  }
-
-  eliminarCarro(id: number) {
-    this.cartService.eliminarCarro(id).subscribe(
-      (data) => {
-        this.getAllEmployee();
-        
-      });
+  hola(){
+    // this.mostrarCarro();
   }
 }

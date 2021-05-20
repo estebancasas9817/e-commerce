@@ -1,6 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { Product } from 'src/app/models/product';
-import { CartService } from 'src/app/services/cart.service';
 import { Cart } from 'src/app/models/cart';
 import {ListadoCompras} from 'src/app/models/listado-compras'
 import { MessengerService } from 'src/app/services/messenger.service'
@@ -22,8 +21,7 @@ export class ListadoComprasComponent implements OnInit {
   @Input() cartItem: any
   @Input() botonfecha = document.querySelector(".btn");
 
-  constructor(private msg: MessengerService,
-    private cartService: CartService) { }
+  constructor(private msg: MessengerService) { }
 
   ngOnInit(): void {
     const usuario = localStorage.getItem('usuario');
@@ -41,9 +39,7 @@ export class ListadoComprasComponent implements OnInit {
       }
       
       }
-    this.handleSubscription();
-    this.loadCartItems();
-    this.getAllEmployee();
+   
     this.calcCartTotal();
     
   
@@ -52,34 +48,9 @@ export class ListadoComprasComponent implements OnInit {
     //console.log(fecha);
   }
 
-  handleSubscription() {
-    this.msg.getMsg().subscribe((product: Product) => {
-      this.loadCartItems();
-    })
-  }
+  
 
-  loadCartItems() {
-    this.cartService.getListadoItems().subscribe((items: ListadoCompras[]) => {
-      this.cartItems = items;
-      this.cartItems.forEach(item =>{
-        this.total += item.qty;
-      })
-
-      this.cartItems.forEach(item =>{
-        if(this.tempo != item.date)
-        {
-          console.log("hola");
-          this.tempo = item.date;
-          this.itemsfechas.push(item);
-          console.log(item);
-        }
-        
-      })
-
-
-      this.calcCartTotal();
-    })
-  }
+  
 
   calcCartTotal() {
     this.cartTotal = 0
@@ -88,16 +59,9 @@ export class ListadoComprasComponent implements OnInit {
     })
   }
 
-  getAllEmployee() {
-    this.cartService.getAllEmployee();
-  }
+  
 
-  eliminarCarro(id: number) {
-    this.cartService.eliminarCarro(id).subscribe(
-      (data) => {
-        this.getAllEmployee();
-      });
-  }
+  
 
   verdetalle(){
     const hiddenImg = document.querySelector(".hiddenImg");

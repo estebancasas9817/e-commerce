@@ -1,0 +1,136 @@
+.contenedor__carrito {
+  position: sticky;
+  top: 0%;
+}
+.contenedor {
+  position: relative;
+  height: 800vh;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.25rem;
+}
+
+.list-group-item:last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.alert {
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+}
+
+.subtotal {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.texto--carro {
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+  margin-left: 5rem;
+  font-weight: 800;
+  letter-spacing: 0.5rem;
+  display: inline-block;
+}
+
+.subtotal {
+  letter-spacing: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.pagar {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.lista-pagar {
+  background-color: #000;
+}
+
+.lista__verCarrito {
+  border: 0.15rem solid #000;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.lista__subtotal {
+  margin-top: 5rem;
+  border: none;
+  border-top: 0.1rem solid gray;
+}
+
+.boton {
+  text-decoration: none;
+  color: #000;
+}
+
+.boton--blanco {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-item {
+  font-size: small;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.25rem;
+}
+
+.list-group-item:last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+span,
+strong {
+  font-size: 0.9rem;
+  letter-spacing: 0.3rem;
+}
+
+.caja,
+.contenedor {
+  float: left;
+}
+
+.caja,
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+span,
+strong {
+  font-size: 0.9rem;
+  letter-spacing: 0.3rem;
+}
+
+.cajass,
+.contenedores {
+  float: left;
+}
+
+.cajass,
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.lista__subtotal:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.25rem;
+}
+
+.lista__subtotal:last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

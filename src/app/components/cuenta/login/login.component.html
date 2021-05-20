@@ -3,7 +3,7 @@
      #loginForm="ngForm"
       (ngSubmit)="loginForm.valid && login()">
         <input type="email" class="contact__nombre input" placeholder="Usuario" required
-        [(ngModel)]="model.userNombre" 
+        [(ngModel)]="credentials.nombreUsuario" 
         name="userNombre"
         #userEmail="ngModel"
         id="userEmail"
@@ -17,7 +17,7 @@
            required
            name="userPassword"
            #userPassword="ngModel"
-        [(ngModel)]="model.userPassword" 
+           [(ngModel)]="credentials.password"
         id="userPassword"
         nombre="userPassword">
         <label for="" class="contact__label">Contraseña</label>

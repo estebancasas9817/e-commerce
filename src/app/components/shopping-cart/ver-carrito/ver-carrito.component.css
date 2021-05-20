@@ -60,3 +60,8 @@
 .total {
   margin-bottom: 1rem;
 }
+
+button {
+  background-color: transparent;
+  border: none;
+}

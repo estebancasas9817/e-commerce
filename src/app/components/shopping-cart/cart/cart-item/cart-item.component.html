@@ -1,12 +1,12 @@
 <div class="cart-item">
-  <div class="caja">
+  <div class="cajass">
     <span class="eliminar--item">
-      <a href="/productos"(click)="eliminarCarro(cartItem.id)">X</a></span>
+      <button (click)="eliminarCarro(cartItem)">X</button></span>
   </div>
-    <div class="contenedor">
-      <span>{{ cartItem.productnombre }}</span> <span>  x </span>
-    <span>{{ cartItem.qty }}</span>:
-    <strong>{{ (cartItem.qty * cartItem.precio) | currency:'USD' }}</strong>
+    <div class="contenedores">
+      <span>{{ cartItem.nombre }}</span> <span>  x </span>
+    <span>1</span>:
+    <strong>{{ (cartItem.precio) | currency:'USD' }}</strong>
     </div>
     
   </div>

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { usuariosUrl } from 'src/config/api';
+
 import { Usuarios } from '../models/usuarios';
-const apiUrl = "http://localhost:3000/usuarios";
+
 const headerOption = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
@@ -24,9 +24,19 @@ export class UsuariosService {
 
   }
 
+  public getUsuario(nombreUsuario : String):Observable<any>{
+    return this.http.get<any>("http://localhost:8080/getusuariopornombre/"+nombreUsuario);
+  }
+
+
   recuperarUsuario(id:number):Observable<any>{
     return this.http.get<any>("http://localhost:10/getusuarioporid"+id);
   }
+
+  public registrarUsuario(user){
+    return this.http.post("http://localhost:8080/crearusuario",user,{responseType: 'text' as 'json'});
+  }
+
 
   
 

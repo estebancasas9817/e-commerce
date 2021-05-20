@@ -1,6 +1,6 @@
 import { Component, OnInit,Input} from '@angular/core';
 import { Product } from 'src/app/models/product';
-import { CartService } from 'src/app/services/cart.service';
+
 import { VentaService } from 'src/app/services/venta.service';
 import { Cart } from 'src/app/models/cart';
 import { Usuarios } from 'src/app/models/usuarios';
@@ -27,7 +27,6 @@ export class ReporteVentasAdminComponent implements OnInit {
   @Input() cartItem: any
   constructor(private msg: MessengerService,
     private http: HttpClient,
-    private cartService: CartService,
     private ventaService: VentaService,
     private usuariosService: UsuariosService,
     private ngxSpinnerService: NgxSpinnerService) { }

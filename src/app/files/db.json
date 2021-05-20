@@ -1,5 +1,5 @@
-{
-  "products": [
+
+   [
     {
       "id": 8,
       "nombre": "High Waist Bikini Bottom - Sand",
@@ -161,43 +161,5 @@
       "fotos": "https://cdn.shopify.com/s/files/1/0311/9398/9260/products/true-bob-overall-light-blue-1.jpg?v=1607984886",
       "id": 900
     }
-  ],
-  "cart": [],
-  "detalle-compra": [],
-  "usuarios": [
-    {
-      "nombre": "Esteban",
-      "apellido": "Casas",
-      "email": "estebancasas9817@gmail.com",
-      "clave": "esteban",
-      "id": 1
-    }
-  ],
-  "compras": [
-    
-  ],
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "admin": [
-    {
-      "usuario": "wilmer",
-      "correo": "wilmer@gmail.com",
-      "clave": "wilmer123"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "nombre": "typicode"
-  }
-}
+  ]
+  

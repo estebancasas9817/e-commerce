@@ -1,65 +1,73 @@
 import { Component, OnInit,Input} from '@angular/core';
 import { Product } from 'src/app/models/product';
-import { CartService } from 'src/app/services/cart.service';
+import { CarritoService } from 'src/app/services/carrito.service';
 import { Cart } from 'src/app/models/cart';
 import { MessengerService } from 'src/app/services/messenger.service'
-
+import db from 'src/app/files/db.json'
 @Component({
   selector: 'app-ver-carrito',
   templateUrl: './ver-carrito.component.html',
   styleUrls: ['./ver-carrito.component.css']
 })
 export class VerCarritoComponent implements OnInit {
-  cartItems = [];
+  public productosCarrito: Product[] = [];
+  public cantItems:number;
+  public totalCarrito: number;
 
-  cartTotal = 0
+  public productos: Product[] = [];
+  public productosDestacados: Product[] = [];
+  public listaproductos: { id: number, nombre: string, descripcion: string, precio: number, fotos: string }[] = db;
+
+
+  // public productosCarrito: Product[] = [];
+
   @Input() cartItem: any
+  
   constructor(private msg: MessengerService,
-    private cartService: CartService) { }
+    private carritoService: CarritoService) { }
 
   ngOnInit(): void {
-    this.handleSubscription();
-    this.loadCartItems();
-    this.getAllEmployee();
-  }
-  handleSubscription() {
-    this.msg.getMsg().subscribe((product: Product) => {
-      this.loadCartItems();
-    })
+    // this.productosCarrito = this.carritoService.getProductosCarrito();
+    // console.log(this.productosCarrito);
+    
+    // this.cantItems=this.productosCarrito.length;
+    // if(this.cantItems !=0){
+    // let j = 0;
+    // for(let i=0;i<this.productosCarrito.length;i++){
+    //   j= j+ Number (this.productosCarrito[i].precio);
+    // }
+    // this.totalCarrito = j;
+    // }
+
+    this.mostrarCarro();
+
   }
 
-  loadCartItems() {
-    this.cartService.getCartItems().subscribe((items: Cart[]) => {
-      this.cartItems = items;
-      this.calcCartTotal();
-    })
+  mostrarCarro(){
+    console.log("sdsdsdsd");
+    this.productosCarrito=this.carritoService.getProductosCarrito();
+    
+    
+    this.cantItems=this.productosCarrito.length;
+    if(this.cantItems !=0){
+    let j = 0;
+    for(let i=0;i<this.productosCarrito.length;i++){
+      j= j+ Number (this.productosCarrito[i].precio);
+    }
+    this.totalCarrito = j;
+    }
   }
 
-  calcCartTotal() {
-    this.cartTotal = 0
-    this.cartItems.forEach(item => {
-      this.cartTotal += (item.qty * item.precio)
-    })
+  eliminarCarro(producto: Product){
+    console.log("aca",producto);
+    this.carritoService.eliminarItemCarrito(producto);
+    this.mostrarCarro();
+    this.cantItems=this.productosCarrito.length;
+    
   }
 
-  getAllEmployee() {
-    this.cartService.getAllEmployee();
-  }
-
-  eliminarCarro(id: number) {
-    this.cartService.eliminarCarro(id).subscribe(
-      (data) => {
-        this.getAllEmployee();
-      });
-      this.cartService.eliminarLista(id).subscribe(
-        (data) => {
-          this.getAllEmployee();
-        });
   
-        this.cartService.eliminarDetalle(id).subscribe(
-          (data) => {
-            this.getAllEmployee();
-          });
-  }
+
+  
 
 }

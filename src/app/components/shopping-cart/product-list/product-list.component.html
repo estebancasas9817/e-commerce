@@ -1,6 +1,108 @@
-<div class="row">
-    <div class="col-md-4" *ngFor="let product of productList">
+<!-- <div class="row">
+    <div class="col-md-3" *ngFor="let product of productList">
       <app-product-item [productItem]="product"></app-product-item>
+    </div>
+    
+  </div> -->
+  <div class="row">
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-4" *ngFor = "let product of productList">
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" [src]="product.fotos">
+            <div class="card-body">
+              <p class="card-text">{{product.nombre}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button 
+                  type="button" 
+                  class="btn btn-sm btn-outline-primary product-btn"
+                  (click) ="handleAddToCart(product)"
+                  >Añadir al carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary product-btn" (click) = p()>Ver Detalles</button>
+                </div>
+                <h5><strong class="text-muted">{{product.precio | currency: 'USD '}}</strong>
+                </h5>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+   <!-- CARRITO!!!!! -->
+    <div class="col col--fixed">
+      <div class="contenedor">
+        <div class="contenedor__carrito">
+            <div class="contenedor__header">
+                <h2 class="texto--carro">Carrito</h2>
+            </div>
+            <div *ngIf="cantItems === 0" class="alert alert-info">No hay productos en el carrito.
+            </div>
+            <ul *ngIf="cantItems > 0" class="list-group">
+                <li class="list-group-item cerrar" *ngFor="let item of productosCarrito">
+                  <div class="cart-item">
+                    <div class="cajass">
+                      <span class="eliminar--item">
+                        <button (click)="eliminarCarro(item)">X</button></span>
+                    </div>
+                      <div class="contenedores">
+                        <span>{{ item.nombre }}</span> <span>  x </span>
+                      <span>1</span>:
+                      <strong>{{ (item.precio) | currency:'USD' }}</strong>
+                      </div>
+                      
+                    </div>
+                  <!-- <app-cart-item [cartItem]="item"></app-cart-item> -->
+                  
+                  
+                </li>
+                <li class="list-group-item lista__subtotal">
+                    <h5 class="subtotal">Subtotal :  {{totalCarrito | currency:'USD'}}</h5>
+                </li>
+    
+                <li class="list-group-item lista__verCarrito">
+                  <h5 class="verCarrito"><a [routerLink] = "['/verCarro']" class="boton">Ver carrito</a></h5>
+              </li>
+    
+                <li class="list-group-item lista-pagar">
+                  <h5 class="pagar"><a [routerLink]="['/pagar']" class="boton--blanco">Ir A Pagar</a></h5>
+              </li>
+            </ul>
+        </div>
+    </div> 
+    
+    
+    
     </div>
   </div>
   
+  
+  <!-- <div class="contenedor">
+    <div class="contenedor__carrito">
+        <div class="contenedor__header">
+            <h2 class="texto--carro">Carrito</h2>
+        </div>
+        <div *ngIf="cantItems === 0" class="alert alert-info" (click) ="hola()">No hay productos en el carrito.
+        </div>
+        <ul *ngIf="cantItems > 0" class="list-group">
+            <li class="list-group-item cerrar" *ngFor="let item of productosCarrito">
+              <app-cart-item [cartItem]="item"></app-cart-item>
+              
+            </li>
+            <li class="list-group-item lista__subtotal">
+                <h5 class="subtotal">Subtotal :  {{totalCarrito | currency:'USD'}}</h5>
+            </li>
+
+            <li class="list-group-item lista__verCarrito">
+              <h5 class="verCarrito"><a [routerLink] = "['/verCarro']" class="boton">Ver carrito</a></h5>
+          </li>
+
+            <li class="list-group-item lista-pagar">
+              <h5 class="pagar"><a [routerLink]="['/pagar']" class="boton--blanco">Ir A Pagar</a></h5>
+          </li>
+        </ul>
+    </div>
+</div>  -->
+
+

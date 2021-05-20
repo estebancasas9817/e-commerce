@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { adminUrl } from 'src/config/api';
+
 import { Admin } from '../models/admin';
-const apiUrl = "http://localhost:3000/admin";
+
 @Injectable({
   providedIn: 'root'
 })
