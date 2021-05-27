@@ -7,7 +7,7 @@
   <div class="row">
     <div class="col-md-9">
       <div class="row">
-        <div class="col-md-4" *ngFor = "let product of productList">
+        <div class="col-md-4" *ngFor = "let product of productospaginacion">
           <div class="card mb-4 shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" [src]="product.fotos">
             <div class="card-body">
@@ -21,13 +21,25 @@
                   >Añadir al carrito</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary product-btn" (click) = p()>Ver Detalles</button>
                 </div>
-                <h5><strong class="text-muted">{{product.precio | currency: 'USD '}}</strong>
+                <h5 class="textoCorrido"><strong class="text-muted">{{product.precio | currency: 'USD '}}</strong>
                 </h5>
               </div>
             </div>
         </div>
         </div>
       </div>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <a>
+            <button type="submit"class="btn btn-outline-dark" data-abc="true" (click)="rewind()">Atras </button>
+          </a>
+          <a class="page-item">
+            <button type="submit"class="btn btn-outline-dark" data-abc="true" (click)="forward()">Siguiente </button>
+          </a>
+        </ul>
+    </nav>
+    
       
     </div>
    <!-- CARRITO!!!!! -->
@@ -44,7 +56,7 @@
                   <div class="cart-item">
                     <div class="cajass">
                       <span class="eliminar--item">
-                        <button (click)="eliminarCarro(item)">X</button></span>
+                        <button (click)="eliminarCarro(item)" class="btnX">X</button></span>
                     </div>
                       <div class="contenedores">
                         <span>{{ item.nombre }}</span> <span>  x </span>

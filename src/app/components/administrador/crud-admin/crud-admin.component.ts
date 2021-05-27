@@ -16,8 +16,17 @@ export class CrudAdminComponent implements OnInit {
 
   productList: Product[] = []
 
+  
+
   producto = new Product();
   productoEditar = new Product();
+  productospaginacion: Array<any>;
+  page = 0;
+  size = 4;
+  order = 'id';
+  asc = true;
+  isFirst = false;
+  isLast = false;
 
   registroForm: FormGroup;
   @Input() productItem: any
@@ -30,16 +39,50 @@ export class CrudAdminComponent implements OnInit {
     
     
 
-    this.productService.recuperarListaProductoRemoto().subscribe(
-      data=>{
-        console.log("respuesta recivida");
-        this.productList = data;
-      },
-      error=>console.log("error recivido")
-    )
+    // this.productService.recuperarListaProductoRemoto().subscribe(
+    //   data=>{
+    //     this.productList = data;
+    //     console.log(this.productList[1].fotos);
+    //   },
+    //   error=>console.log("error recivido")
+    // )
+
+    this.cargarProductos();
 
     
     
+  }
+
+  sort(): void {
+    this.asc = !this.asc;
+    this.cargarProductos();
+  }
+
+  rewind(): void {
+    if(!this.isFirst){
+      this.page--;
+      this.cargarProductos();
+    }
+  }
+
+  forward(): void {
+    if(!this.isLast){
+      this.page++;
+      this.cargarProductos();
+    }
+  }
+
+  public cargarProductos(){
+    this.productService.productos(this.page,this.size,this.order,this.asc).subscribe(
+      data => {
+        this.productospaginacion = data.content;
+        this.isFirst = data.first;
+        this.isLast = data.last;
+        console.log(data);
+      },
+      err =>{
+        console.log(err.error);
+      });
   }
 
   addProductformsubmit(){
@@ -107,6 +150,7 @@ export class CrudAdminComponent implements OnInit {
 
 
   eliminarProduct(id :number) {
+    console.log("sddsd");
     this.productService.eliminarProductoPorId(id).subscribe(
       data=>{
         console.log("eliminado correctamente");

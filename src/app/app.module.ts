@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule,HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AuthInterceptorService } from 'src/app/services/auth-interceptor.service';
 import { HeaderComponent } from './components/header/header.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { GrillaHomeComponent } from './components/grilla-home/grilla-home.component';
@@ -70,6 +71,7 @@ import { CuentaAdminComponent } from './components/administrador/cuenta-admin/cu
     FormsModule,
     ReactiveFormsModule,
     NgxSpinnerModule,
+    HttpClientModule,
     ToastrModule.forRoot(),
     RouterModule.forRoot(
       [
@@ -95,7 +97,13 @@ import { CuentaAdminComponent } from './components/administrador/cuenta-admin/cu
     ),
     NgbModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptorService,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

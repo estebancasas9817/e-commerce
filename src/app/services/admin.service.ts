@@ -13,15 +13,15 @@ export class AdminService {
 
   getAdminPorId(id: number): Observable<any> {
     // console.log(this.http.get<any>('http://localhost:10/getadminporid/'+id));
-    return this.http.get<any>('http://localhost:10/getadminporid/'+id);
+    return this.http.get<any>('http://divante-env.eba-vf8h3gxz.us-east-1.elasticbeanstalk.com/getadminporid/'+id);
   }
 
   getAdminPorNombre(nombre: String): Observable<any> {
     
-    return this.http.get<any>('http://localhost:10/getadminporusuario/'+nombre);
+    return this.http.get<any>('http://divante-env.eba-vf8h3gxz.us-east-1.elasticbeanstalk.com/getadminporusuario/'+nombre);
   }
 
   getAdminPorCorreo(correo: String): Observable<any> {
-    return this.http.get<any>('http://localhost:10/getadminporemail/'+correo);
+    return this.http.get<any>('http://divante-env.eba-vf8h3gxz.us-east-1.elasticbeanstalk.com/getadminporemail/'+correo);
   }
 }

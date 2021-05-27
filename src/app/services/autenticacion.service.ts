@@ -14,7 +14,7 @@ export class AutenticacionService {
   constructor(private http:HttpClient) { }
 
   public authenticate(credentials) : Observable<HttpResponse<Object>>{
-    return this.http.post<HttpResponse<Object>>("http://localhost:8080/login",credentials,{observe: 'response'});
+    return this.http.post<HttpResponse<Object>>("http://divante-env.eba-vf8h3gxz.us-east-1.elasticbeanstalk.com/login",credentials,{observe: 'response'});
   }
 
   public autenticarUsuario(usuario: Usuarios){

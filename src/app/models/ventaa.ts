@@ -7,12 +7,12 @@ import { Usuarios } from "./usuarios"
 export class Ventaa {
     // idVenta: number;
     producto:Product[]
-    idUsuario:Usuario;
+    nomUsuario:Usuario;
     nomAdmin:Admin;
 
-    constructor(producto:Product[],idUsuario: Usuario,nomAdmin:Admin) {
+    constructor(producto:Product[],nomUsuario: Usuario,nomAdmin:Admin) {
         this.producto = producto;
-        this.idUsuario = idUsuario;
+        this.nomUsuario = nomUsuario;
         this.nomAdmin = nomAdmin;
       }
 

@@ -120,7 +120,7 @@ strong {
 }
 
 .cajass,
-button {
+.btnX {
   background-color: transparent;
   border: none;
 }
@@ -133,4 +133,8 @@ button {
 .lista__subtotal:last-child {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.textoCorrido {
+  margin-left: 20px;
 }

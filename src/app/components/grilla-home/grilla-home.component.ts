@@ -20,7 +20,7 @@ export class GrillaHomeComponent implements OnInit {
       if(logOut.classList.contains("hidden") === true)
       {
         logOut.classList.toggle("hidden");
-        verListado.classList.toggle("hidden");
+        // verListado.classList.toggle("hidden");
       }
       
       }

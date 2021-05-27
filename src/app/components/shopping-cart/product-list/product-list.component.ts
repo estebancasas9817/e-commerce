@@ -16,6 +16,15 @@ export class ProductListComponent implements OnInit {
   cartItems = [];
 
   cartTotal = 0
+
+  productospaginacion: Array<any>;
+  page = 0;
+  size = 9;
+  order = 'id';
+  asc = true;
+  isFirst = false;
+  isLast = false;
+
   public productosCarrito: Product[] = [];
   public cantItems:number = 0;
   public totalCarrito: number;
@@ -24,8 +33,7 @@ export class ProductListComponent implements OnInit {
     private carritoService: CarritoService) { }
 
   ngOnInit() {
-    this.productService.recuperarListaProductoRemoto().subscribe(products =>{
-      this.productList = products;
+    this.cargarProductos();
     const usuario = localStorage.getItem('usuario');
     const textoUsuario = document.querySelector(".textoUsuario");
     const logOut = document.querySelector(".contenedor__logOut");
@@ -38,14 +46,65 @@ export class ProductListComponent implements OnInit {
         logOut.classList.toggle("hidden");
         verListado.classList.toggle("hidden");
       }
+    }
+    // this.productService.recuperarListaProductoRemoto().subscribe(products =>{
+    //   this.productList = products;
+    // const usuario = localStorage.getItem('usuario');
+    // const textoUsuario = document.querySelector(".textoUsuario");
+    // const logOut = document.querySelector(".contenedor__logOut");
+    // const verListado = document.querySelector(".contenedor__verListado");
+    //   if(usuario != null)
+    //   {
+    //   textoUsuario.textContent = usuario; 
+    //   if(logOut.classList.contains("hidden") === true)
+    //   {
+    //     logOut.classList.toggle("hidden");
+    //     verListado.classList.toggle("hidden");
+    //   }
       
-      }
-      console.log(this.productList[0].nombre);
-    })
+    //   }
+    //   console.log(this.productList[0].nombre);
+    // })
   }
 
+  sort(): void {
+    this.asc = !this.asc;
+    this.cargarProductos();
+  }
+
+  rewind(): void {
+    if(!this.isFirst){
+      this.page--;
+      this.cargarProductos();
+    }
+  }
+
+  forward(): void {
+    if(!this.isLast){
+      this.page++;
+      this.cargarProductos();
+    }
+  }
+
+  public cargarProductos(){
+    this.productService.productos(this.page,this.size,this.order,this.asc).subscribe(
+      data => {
+        this.productospaginacion = data.content;
+        this.isFirst = data.first;
+        this.isLast = data.last;
+        console.log(data);
+      },
+      err =>{
+        console.log(err.error);
+      });
+
+    
+  }
+
+
+
   mostrarCarro(){
-    console.log("sdsdsdsd");
+    // console.log("sdsdsdsd");
     this.productosCarrito=this.carritoService.getProductosCarrito();
     
     
@@ -72,7 +131,7 @@ export class ProductListComponent implements OnInit {
   }
 
   eliminarCarro(producto:Product){
-    console.log("eliminado",producto);
+    // console.log("eliminado",producto);
     this.carritoService.eliminarItemCarrito(producto);
     this.mostrarCarro();
     this.cantItems=this.productosCarrito.length;

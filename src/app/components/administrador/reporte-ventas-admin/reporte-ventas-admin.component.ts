@@ -24,6 +24,13 @@ export class ReporteVentasAdminComponent implements OnInit {
   allUsuarios: Usuarios[];
   productList: Ventaa[] = []
   cartTotal = 0
+  productospaginacion: Array<any>;
+  page = 0;
+  size = 4;
+  order = 'id';
+  asc = true;
+  isFirst = false;
+  isLast = false;
   @Input() cartItem: any
   constructor(private msg: MessengerService,
     private http: HttpClient,
@@ -39,8 +46,42 @@ export class ReporteVentasAdminComponent implements OnInit {
     this.getAllVentas();
     this.getTotalVentas();
     this.getAllItems();
+    // this.cargarProductos();
   
   }
+
+  // sort(): void {
+  //   this.asc = !this.asc;
+  //   this.cargarProductos();
+  // }
+
+  // rewind(): void {
+  //   if(!this.isFirst){
+  //     this.page--;
+  //     this.cargarProductos();
+  //   }
+  // }
+
+  // forward(): void {
+  //   if(!this.isLast){
+  //     this.page++;
+  //     this.cargarProductos();
+  //   }
+  // }
+
+  // public cargarProductos(){
+  //   this.ventaService.ventas(this.page,this.size,this.order,this.asc).subscribe(
+  //     data => {
+  //       this.productospaginacion = data.content;
+  //       console.log("reporte",data.content);
+  //       this.isFirst = data.first;
+  //       this.isLast = data.last;
+  //       console.log(data);
+  //     },
+  //     err =>{
+  //       console.log(err.error);
+  //     });
+  // }
 
   // handleSubscription() {
   //   this.msg.getMsg().subscribe((product: Product) => {
@@ -70,6 +111,8 @@ export class ReporteVentasAdminComponent implements OnInit {
     this.ventaService.getAllVentas().subscribe(
       data=>{
         this.productList = data;
+
+        
       }
     )
   }

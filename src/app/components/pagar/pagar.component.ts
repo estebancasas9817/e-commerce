@@ -4,6 +4,7 @@ import {Ventaa} from 'src/app/models/ventaa';
 import { Product } from 'src/app/models/product';
 import { Admin } from 'src/app/models/admin';
 import { Usuario } from 'src/app/models/usuario';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-pagar',
@@ -16,7 +17,8 @@ export class PagarComponent implements OnInit {
   admin: Admin;
   productList: Product[] = []
   public productosCarrito: Product[] = [];
-  constructor(private carritoService: CarritoService) { }
+  constructor(private carritoService: CarritoService,
+    private router: Router) { }
   public miVenta: Ventaa[] = []
   ngOnInit(): void {
     const usuario = localStorage.getItem('usuario');
@@ -29,33 +31,40 @@ export class PagarComponent implements OnInit {
       if(logOut.classList.contains("hidden") === true)
       {
         logOut.classList.toggle("hidden");
-        verListado.classList.toggle("hidden");
+        // verListado.classList.toggle("hidden");
       }
       
       }
   }
 
   pagar(){
-    
-    this.productosCarrito=this.carritoService.getProductosCarrito();
-    // this.MiVenta.producto = this.productosCarrito;
-    // console.log(this.productosCarrito);
-    // this.MiVenta.idUsuario = 7;
-    // this.MiVenta.nomAdmin = 1;
-    let cartItems: Ventaa;
-    let idAdmin :Admin;
-    idAdmin = new Admin(1);
-    let idUsuario = new Usuario(7);
-    cartItems = new Ventaa(this.productosCarrito,idUsuario,idAdmin);
-    // console.log(cartItems);
-    this.carritoService.agregarVenta(cartItems).subscribe(
-      data =>{
-        
-      },
-      error =>{
-        console.log("paila ñero");
-      }
-    )
+    const usuario = localStorage.getItem('usuario');
+    if(usuario != null)
+      {
+        this.productosCarrito=this.carritoService.getProductosCarrito();
+        let cartItems: Ventaa;
+        let idAdmin :Admin;
+        idAdmin = new Admin(1);
+        let idUsuario = new Usuario(7);
+        // console.log("mi Venta",this.productosCarrito);
+        cartItems = new Ventaa(this.productosCarrito,idUsuario,idAdmin);
+        // console.log(cartItems);
+        this.carritoService.agregarVenta(cartItems).subscribe(
+          data =>{
+            
+          },
+          error =>{
+            console.log(error);
+          }
+        )
+          for ( let i = 0; i < this.productosCarrito.length; i++) {
+            this.carritoService.eliminarItemCarrito(this.productosCarrito[i]);
+        }
+      }  
+      else {
+        alert("Inicia sesión para comprar");
+        this.router.navigate(['/cuenta']);
+      }  
   }
 
 }

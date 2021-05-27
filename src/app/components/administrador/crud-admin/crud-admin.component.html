@@ -70,22 +70,22 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let item of productList">
+                <tr *ngFor="let producto of productospaginacion">
                     <td scope="row" class="imagen" >
-                        <img [src]="item.fotos" width="60%" alt="">
+                        <img [src]="producto.fotos" width="100%" alt="">
                     </td>
-                    <th scope="row" class="tamanioInfo">{{item.nombre}}</th>
-                    <td scope="row" class="tamanioInfo">{{item.precio | currency:'USD'}}</td>
-                    <td scope="row" class="tamanioInfo itemCantidad">{{item.descripcion}}</td>
-                    <td scope="row" class="tamanioInfo"> {{item.id}}</td>
+                    <th scope="row" class="tamanioInfo">{{producto.nombre}}</th>
+                    <td scope="row" class="tamanioInfo">{{producto.precio | currency:'USD'}}</td>
+                    <td scope="row" class="tamanioInfo itemCantidad">{{producto.descripcion}}</td>
+                    <td scope="row" class="tamanioInfo"> {{producto.id}}</td>
                     <td>
-                        <a class="btn" (click)="editProduct(item)">
+                        <a class="btn" (click)="editProduct(producto)">
                           <i class="fa fa-edit"></i>
                         </a>
                       </td>
 
                     <td>
-                        <a class="btn text-danger"(click)="eliminar(item)"  href="/panel-admin">
+                        <a class="btn text-danger"(click)="eliminar(producto)"  href="/panel-admin">
                           <i class="fa fa-trash"></i>
                         </a>
                       </td>
@@ -93,6 +93,17 @@
             </tbody>
             
         </table>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <a>
+                <button type="submit"class="btn btn-outline-dark" data-abc="true" (click)="rewind()">Atras </button>
+              </a>
+              <a class="page-item">
+                <button type="submit"class="btn btn-outline-dark" data-abc="true" (click)="forward()">Siguiente </button>
+              </a>
+            </ul>
+        </nav>
     </div>
 </div>
 

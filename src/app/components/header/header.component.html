@@ -12,14 +12,8 @@
     <a [routerLink]="['/cuenta']"><i class="fas fa-user"></i></a>
         <small class="textoUsuario">Usuario</small>
     </div>
-
-    <div class="contenedor__verListado hidden">
-        <a [routerLink]="['/listado-compras']" class="verListado__Link"><i class="fas fa-shopping-cart"></i></a>
-        <small>Ver mis compras</small>
-    </div>
-
     <div class="contenedor__logOut hidden">
-        <a [routerLink]="['/home']" class="logOut__Link" ><i class="fas fa-sign-out-alt"></i></a>
+        <a [routerLink]="['/home']" class="logOut__Link" ><i class="fas fa-sign-out-alt" (click)="logOut()"></i></a>
         <small>Log Out</small>
     </div>
     

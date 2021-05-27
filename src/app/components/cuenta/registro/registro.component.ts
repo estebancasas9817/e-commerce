@@ -31,7 +31,10 @@ export class RegistroComponent implements OnInit {
     const miNombre = <HTMLInputElement>document.querySelector(".miNombre");
     textoUsuario.textContent = miNombre.value;
     logOut.classList.toggle("hidden");
-    verListado.classList.toggle("hidden");
+    
+    localStorage.setItem("usuario",miNombre.value);
+    // verListado.classList.toggle("hidden");
+    console.log(data);
     
       
     

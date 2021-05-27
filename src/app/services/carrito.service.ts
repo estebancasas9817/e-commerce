@@ -35,7 +35,7 @@ export class CarritoService {
   agregarVenta(venta:Ventaa):Observable<any>{
     
     console.log(venta);
-    return this.http.post<any>('http://localhost:10/crearventa',venta);
+    return this.http.post<any>('http://divante-env.eba-vf8h3gxz.us-east-1.elasticbeanstalk.com/crearventa',venta);
 
   }
 

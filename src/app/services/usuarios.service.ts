@@ -20,40 +20,39 @@ export class UsuariosService {
   // }
 
   agregarUsuario(usuario: Usuarios):Observable<any>{
-    return this.http.post<any>('http://localhost:10/crearusuario',usuario);
+    
+    return this.http.post<any>('http://divante-env.eba-vf8h3gxz.us-east-1.elasticbeanstalk.com/crearusuario',usuario);
 
   }
 
   public getUsuario(nombreUsuario : String):Observable<any>{
-    return this.http.get<any>("http://localhost:8080/getusuariopornombre/"+nombreUsuario);
+    return this.http.get<any>("http://divante-env.eba-vf8h3gxz.us-east-1.elasticbeanstalk.com/getusuario/"+nombreUsuario);
   }
 
 
   recuperarUsuario(id:number):Observable<any>{
-    return this.http.get<any>("http://localhost:10/getusuarioporid"+id);
+    return this.http.get<any>("http://divante-env.eba-vf8h3gxz.us-east-1.elasticbeanstalk.com/getusuarioporid"+id);
   }
 
-  public registrarUsuario(user){
-    return this.http.post("http://localhost:8080/crearusuario",user,{responseType: 'text' as 'json'});
-  }
+  
 
 
   
 
   getUsuarioPorEmail(email:String): Observable<any[]> {
-    return this.http.get<any>("http://localhost:10/getusuarioporemail/"+email);
+    return this.http.get<any>("http://divante-env.eba-vf8h3gxz.us-east-1.elasticbeanstalk.com/getusuarioporemail/"+email);
   }
 
   getUsuarioPorNombre(nombre:String): Observable<any[]> {
-    return this.http.get<any>("http://localhost:10/getusuariopornombre/"+nombre);
+    return this.http.get<any>("http://divante-env.eba-vf8h3gxz.us-east-1.elasticbeanstalk.com/getusuariopornombre/"+nombre);
   }
 
   getUsuarioPorClave(clave:String): Observable<any[]> {
-    return this.http.get<any>("http://localhost:10/getusuarioporclave/"+clave);
+    return this.http.get<any>("http://divante-env.eba-vf8h3gxz.us-east-1.elasticbeanstalk.com/getusuarioporclave/"+clave);
   }
 
 
   getCantidadUsuarios():Observable<any> {
-    return this.http.get<any>("http://localhost:10/getcantidadusuarios")
+    return this.http.get<any>("http://divante-env.eba-vf8h3gxz.us-east-1.elasticbeanstalk.com/getcantidadusuarios")
   }
 }

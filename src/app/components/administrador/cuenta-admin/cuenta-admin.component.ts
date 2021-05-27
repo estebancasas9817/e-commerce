@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Admin } from 'src/app/models/admin';
 import { AdminService } from 'src/app/services/admin.service'
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-cuenta-admin',
   templateUrl: './cuenta-admin.component.html',
@@ -10,7 +11,8 @@ import { AdminService } from 'src/app/services/admin.service'
 export class CuentaAdminComponent implements OnInit {
   listaAdmin: Admin[] = []
   model: any = {}
-  constructor(private adminService: AdminService) { }
+  constructor(private adminService: AdminService,
+    private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -35,7 +37,7 @@ export class CuentaAdminComponent implements OnInit {
             
             this.adminService.getAdminPorNombre(usuario).subscribe(
               userName=>{
-                userName === null ? location.href = "cuenta-admin":location.href = "panel-admin";
+                userName === null ? location.href = "cuenta-admin": this.router.navigate(['/panel-admin']);
         
                 
               }
@@ -44,7 +46,7 @@ export class CuentaAdminComponent implements OnInit {
         )
     },
     error=>{
-      location.href = "cuenta-admin";
+      this.router.navigate(['/cuenta-admin'])
     }
     ) 
   }
